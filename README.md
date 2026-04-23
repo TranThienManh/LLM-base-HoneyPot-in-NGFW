@@ -89,5 +89,5 @@ http://192.168.100.10
 3. Tổng Hợp
 ![ALL](Report/ALL_CVE.jpg)
 
-> ℹ️ \*\*Chú thích:\*\* Kết quả phân tích chi tiết của đồ án trong \[Báo Cáo](LeTrieuPhu_TranThienManh_DACN.pdf)
+> ℹ️ \*\*Chú thích:\*\* Kết quả phân tích chi tiết của đồ án trong [Báo Cáo](LeTrieuPhu_TranThienManh_DACN.pdf)
 
