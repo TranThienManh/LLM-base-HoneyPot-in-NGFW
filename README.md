@@ -10,7 +10,7 @@
 
 # Sơ đồ mạng
 
-!\[Sơ đồ mạng](https://github.com/TranThienManh/LLM-base-HoneyPot-in-NGFW/blob/main/Report/Network.png)
+![Sơ đồ mạng](Report/Network.png)
 
 # Application Architecture
 
@@ -23,7 +23,7 @@ Sơ đồ tổng quát về sự tương tác giữa các host và luồng dữ 
 5. Từ những IOC có được, tiến hành viết rule chặn IP trên iptables và cập nhật URL độc hại mới vào Blacklist
 6. Bước quan trọng trong đề tài, Trích xuất IOC, payload và các thủ thuật tấn công khác để tạo event cho MISP, thuận tiện cho quá trình theo dõi và giám sát cũng như truy vết
 <br></br>
-!\[Application Architecture](https://github.com/TranThienManh/LLM-base-HoneyPot-in-NGFW/blob/main/Report/app\_data.png)
+![Application Architecture](Report/app_data.png)
 
 # Cơ chế hoạt động của Honeypot
 
@@ -32,7 +32,7 @@ Sơ đồ tổng quát về sự tương tác giữa các host và luồng dữ 
 3. Sau khi hoàn thành tạo promt, promt này sẽ được cập nhật vào Config file của từng giao thức (SSH,HTTP)
 4. Khi có sự tương tác từ attacker, VelLMes sẽ gửi promt lên LLM và nhận về kết quả phản lại cho attacker, đảm bảo giống với hệ thống thật nhất có thể và tránh bị phát hiện. Shell code của Attacker và nội dung phản hồi của Honeypot sẽ được lưu trong 2 file là: Converstion và Log Server
 <br></br>
-!\[Honeypot](https://github.com/TranThienManh/LLM-base-HoneyPot-in-NGFW/blob/main/Report/Honeypot.png)
+![Honeypot](Report/Honeypot.png)
 Nội dung chính của đề tài là Honeypot, cấu hình chi tiết hệ thống có thể tham khảo [NGFW-iptable-squid-snort-clamav-MISP](https://github.com/TranThienManh/NGFW-iptable-squid-snort-clamav-MISP)
 
 # Hướng dẫn sử dụng
@@ -77,17 +77,17 @@ http://192.168.100.10
 
 1. Ba CVE về SSH
 * CVE-2025-32728
-!\[CVE-2025-32728](https://github.com/TranThienManh/LLM-base-HoneyPot-in-NGFW/blob/main/Report/CVE-2025-32728.jpg)
+![CVE-2025-32728](Report/CVE-2025-32728.jpg)
 * CVE-2025-32754
-!\[CVE-2025-32754](https://github.com/TranThienManh/LLM-base-HoneyPot-in-NGFW/blob/main/Report/CVE-2025-32754.jpg)
+![CVE-2025-32754](Report/CVE-2025-32754.jpg)
 * CVE-2025-32755
-!\[CVE-2025-32755](https://github.com/TranThienManh/LLM-base-HoneyPot-in-NGFW/blob/main/Report/CVE-2025-32755.jpg)
+![CVE-2025-32755](Report/CVE-2025-32755.jpg)
 * 
 2. Một CVE về HTTP
 * CVE-2025-32013
-!\[CVE-2025-32013](https://github.com/TranThienManh/LLM-base-HoneyPot-in-NGFW/blob/main/Report/CVE-2025-32013.jpg)
+![CVE-2025-32013](Report/CVE-2025-32013.jpg)
 3. Tổng Hợp
-!\[ALL](https://github.com/TranThienManh/LLM-base-HoneyPot-in-NGFW/blob/main/Report/ALL\_CVE.jpg)
+![ALL](Report/ALL_CVE.jpg)
 
-> ℹ️ \*\*Chú thích:\*\* Kết quả phân tích chi tiết của đồ án trong \[Báo Cáo](https://github.com/TranThienManh/LLM-base-HoneyPot-in-NGFW/blob/main/LeTrieuPhu\_TranThienManh\_DACN.pdf)
+> ℹ️ \*\*Chú thích:\*\* Kết quả phân tích chi tiết của đồ án trong \[Báo Cáo](LeTrieuPhu_TranThienManh_DACN.pdf)
 
