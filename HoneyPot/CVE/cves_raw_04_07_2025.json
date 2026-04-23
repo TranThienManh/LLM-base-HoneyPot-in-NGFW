@@ -1,0 +1,54 @@
+[
+  {
+    "id": "CVE-2025-32728",
+    "method": "SSH",
+    "description": "In sshd in OpenSSH before 10.0, the DisableForwarding directive does not adhere to the documentation stating that it disables X11 and agent forwarding.",
+    "severity": "MEDIUM",
+    "cvss_score": 4.3,
+    "attack_vector": "LOCAL",
+    "privileges_required": "NONE",
+    "user_interaction": "NONE",
+    "confidentiality_impact": "NONE",
+    "integrity_impact": "LOW",
+    "availability_impact": "NONE",
+    "vulnerable_cpe": [
+      "cpe:2.3:a:openbsd:openssh:*:*:*:*:*:*:*:*",
+      "cpe:2.3:o:debian:debian_linux:11.0:*:*:*:*:*:*:*"
+    ],
+    "exploit_refs": []
+  },
+  {
+    "id": "CVE-2025-32754",
+    "method": "SSH",
+    "description": "In jenkins/ssh-agent Docker images 6.11.1 and earlier, SSH host keys are generated on image creation for images based on Debian, causing all containers based on images of the same version use the same SSH host keys, allowing attackers able to insert themselves into the network path between the SSH client (typically the Jenkins controller) and SSH build agent to impersonate the latter.",
+    "severity": "CRITICAL",
+    "cvss_score": 9.1,
+    "attack_vector": "NETWORK",
+    "privileges_required": "NONE",
+    "user_interaction": "NONE",
+    "confidentiality_impact": "HIGH",
+    "integrity_impact": "HIGH",
+    "availability_impact": "NONE",
+    "vulnerable_cpe": [
+      "cpe:2.3:a:jenkins:ssh-agent:*:*:*:*:*:docker:*:*"
+    ],
+    "exploit_refs": []
+  },
+  {
+    "id": "CVE-2025-32755",
+    "method": "SSH",
+    "description": "In jenkins/ssh-slave Docker images based on Debian, SSH host keys are generated on image creation for images based on Debian, causing all containers based on images of the same version use the same SSH host keys, allowing attackers able to insert themselves into the network path between the SSH client (typically the Jenkins controller) and SSH build agent to impersonate the latter.",
+    "severity": "CRITICAL",
+    "cvss_score": 9.1,
+    "attack_vector": "NETWORK",
+    "privileges_required": "NONE",
+    "user_interaction": "NONE",
+    "confidentiality_impact": "HIGH",
+    "integrity_impact": "HIGH",
+    "availability_impact": "NONE",
+    "vulnerable_cpe": [
+      "cpe:2.3:a:jenkins:ssh-slave:*:*:*:*:*:docker:*:*"
+    ],
+    "exploit_refs": []
+  }
+]

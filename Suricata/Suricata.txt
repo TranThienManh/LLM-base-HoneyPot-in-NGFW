@@ -1,0 +1,3 @@
+/var/lib/suricata/rules
+sudo suricata -c /etc/suricata/suricata.yaml -i ens33
+sudo systemctl restart suricata

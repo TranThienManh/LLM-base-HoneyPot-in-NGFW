@@ -1,0 +1,760 @@
+[2025-07-10 16:30:50.533650] Session 192.168.91.100_1752165050: Connection established from 192.168.91.100
+[2025-07-10 16:30:54.171482] Session 192.168.91.100_1752165050: Login: admin/1
+[2025-07-10 16:31:38.501032] Session 192.168.91.100_1752165050: Command: nmap -p 22 target-hostguest@192.168.91.134                                 cd ..
+[2025-07-10 16:31:39.324411] Session 192.168.91.100_1752165050: Response: /home/admin
+[2025-07-10 16:31:44.842720] Session 192.168.91.100_1752165050: Command: cd ..
+[2025-07-10 16:31:44.843678] Session 192.168.91.100_1752165050: Response: 
+[2025-07-10 16:31:47.863593] Session 192.168.91.100_1752165050: Command: 
+[2025-07-10 16:31:47.863790] Session 192.168.91.100_1752165050: Response: Reverted to admin
+[2025-07-10 16:31:50.869757] Session 192.168.91.100_1752165050: Command: cd ..
+[2025-07-10 16:31:50.869892] Session 192.168.91.100_1752165050: Response: 
+[2025-07-10 16:32:18.876130] Session 192.168.91.100_1752165050: Command: nmap -p 22 target-hostguest@192.168.31.134003400
+[2025-07-10 16:32:20.445228] Session 192.168.91.100_1752165050: Response: Starting Nmap 7.80 ( https://nmap.org ) at 2023-02-20 14:34 UTC
+Nmap scan report for target-host (192.168.31.134)
+Host is up (0.00044s latency).
+PORT   STATE SERVICE
+22/tcp open  ssh
+Nmap done: 1 IP address (1 host up) scanned in 0.05 seconds
+[2025-07-10 16:34:49.461258] Session 192.168.91.100_1752165050: Command: nmap -p 22 guest@192.168.31.10034
+[2025-07-10 16:34:50.819879] Session 192.168.91.100_1752165050: Response: Starting Nmap 7.92 ( https://nmap.org ) at 2023-02-20 14:30 UTC
+Nmap scan report for 192.168.31.100
+Host is up (0.00043s latency).
+PORT   STATE SERVICE
+22/tcp open  ssh
+Nmap done: 1 IP address (1 host up) scanned in 0.05 seconds
+[2025-07-10 16:37:06.500211] Session 192.168.91.100_1752165050: Command: slowloris target-host -p 22[D[D[D[D[D[D[D[Cguest@192.168.91.134 -p 22
+[2025-07-10 16:37:07.247974] Session 192.168.91.100_1752165050: Response: bash: slowloris: command not found
+[2025-07-10 16:37:36.013648] Session 192.168.91.100_1752165050: Command: slowloris guest@192.168.91.134 -p 22
+[2025-07-10 16:37:37.037277] Session 192.168.91.100_1752165050: Response: bash: slowloris: command not found
+[2025-07-10 16:38:36.199783] Session 192.168.91.100_1752165050: Command: slowloris guest@192.168.91.134 -p 22                                      watch -n1 'netstat -anp | grep :22'
+[2025-07-10 16:38:36.933999] Session 192.168.91.100_1752165050: Response: bash: command not found
+[2025-07-10 16:38:48.415165] Session 192.168.91.100_1752165050: Command: watch -n1 'netstat -anp | grep :22'
+[2025-07-10 16:38:48.720560] Session 192.168.91.100_1752165050: Response: bash: command not found
+[2025-07-10 16:39:55.033018] Session 192.168.91.100_1752165050: Command: stress --cpu 2 --io 1 --vm 1 --vm-bytes 128M --timeout 10s
+[2025-07-10 16:39:56.419391] Session 192.168.91.100_1752165050: Response: stress: info: [1] dispatching hogs: 2 cpu, 1 io, 1 vm, 0 hdd
+[2025-07-10 16:43:50.754268] Session 192.168.91.100_1752165830: Connection established from 192.168.91.100
+[2025-07-10 16:43:53.672149] Session 192.168.91.100_1752165830: Login: admin/1
+[2025-07-10 16:43:55.957493] Session 192.168.91.100_1752165830: Command: cd ..
+[2025-07-10 16:43:55.957921] Session 192.168.91.100_1752165830: Response: 
+[2025-07-10 16:44:08.494196] Session 192.168.91.100_1752165830: Command: stress --cpu 2 --io 1 --vm 1 --vm-bytes 128M --timeout 10s
+[2025-07-10 16:44:09.594260] Session 192.168.91.100_1752165830: Response: stress: info: [1] dispatching hogs: 2 cpu, 1 io, 1 vm, 0 hdd
+[2025-07-10 16:48:44.909207] Session 192.168.91.100_1752165830: Command: echo 'Denial of Service test complete'
+[2025-07-10 16:48:45.987277] Session 192.168.91.100_1752165830: Response: Denial of Service test complete
+[2025-07-10 16:50:12.160958] Session 192.168.91.100_1752165830: Command: hydra -l root -P pass.txt ssh://target-hostguestdev1@192.168.91.134
+[2025-07-10 16:50:13.156698] Session 192.168.91.100_1752165830: Response: hydra: unrecognized service specified: ssh://target-host
+bash: hydra: command not found
+[2025-07-10 16:50:25.502552] Session 192.168.91.100_1752165830: Command: hydra -l root -P pass.txt ssh://dev1@192.168.91.134
+[2025-07-10 16:50:26.135301] Session 192.168.91.100_1752165830: Response: bash: command not found
+[2025-07-10 16:50:38.764846] Session 192.168.91.100_1752165830: Command: hydra -l root -P pass.txt ssh://dev1@192.168.91.134
+[2025-07-10 16:50:39.246628] Session 192.168.91.100_1752165830: Response: bash: command not found
+[2025-07-10 16:55:47.082499] Session 192.168.91.100_1752165830: Command: s;lowloris
+[2025-07-10 16:55:47.790700] Session 192.168.91.100_1752165830: Response: bash: s;lowloris: command not found
+[2025-07-10 16:56:09.519069] Session 192.168.91.100_1752165830: Command: slowloris dev1@192.168.91.134 -p 22
+[2025-07-10 16:56:10.375171] Session 192.168.91.100_1752165830: Response: bash: slowloris: command not found
+[2025-07-10 16:57:27.280750] Session 192.168.91.100_1752165830: Command: dstat -c --top-io
+[2025-07-10 16:57:29.421466] Session 192.168.91.100_1752165830: Response: **dstat output**
+----total-cpu-usage----
+usr:  5%, sys:  2%, idl: 93%, wai:  0%, hiq:  0%, siq:  0%
+----disk-usage----
+read:   0B, writ:   0B, in:   0, out:   0, blk_read:   0, blk_writ:   0
+----net/total----
+recv:   0B, send:   0B, in:   0, out:   0, pkt_recv:   0, pkt_send:   0
+----most-expensive----
+pid  cpu%|io%|  command
+1234  2.3| 0.0|  sshd
+1235  1.9| 0.0|  apache2
+1236  1.5| 0.0|  mysqld
+1237  1.2| 0.0|  nginx
+1238  0.9| 0.0|  cron
+**dstat output ends**
+[2025-07-10 17:11:56.218399] Session 192.168.91.100_1752165830: Command: stress --cpu 2 --io 1 --vm 1 --vm-bytes 128M --timeout 10s
+[2025-07-10 17:11:57.221439] Session 192.168.91.100_1752165830: Response: stress: info: [1] dispatching hogs: 2 cpu, 1 io, 1 vm, 0 hdd
+[2025-07-10 17:12:30.817514] Session 192.168.91.100_1752165830: Command: dmesg | tail
+[2025-07-10 17:12:33.350490] Session 192.168.91.100_1752165830: Response: [    0.000000] Initializing cgroup subsys cpuset
+[    0.000000] Initializing cgroup subsys cpu
+[    0.000000] Initializing cgroup subsys cpuacct
+[    0.000000] Linux version 5.4.0-122-generic (buildd@lcy01-amd64-022) (gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.1)) #122-Ubuntu SMP Thu Oct 13 14:43:21 UTC 2022 (Ubuntu 5.4.0-122.122-generic 5.4.122)
+[    0.000000] Command line: BOOT_IMAGE=/boot/vmlinuz-5.4.0-122-generic root=UUID=12345678-1234-1234-1234-1234567890ab ro quiet splash
+[    0.000000] KERNEL supported cpus:
+[    0.000000]   Intel GenuineIntel
+[    0.000000]   AMD AuthenticAMD
+[    0.000000]   Centaur CentaurHauls
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x001: 'x87 floating point registers'
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x002: 'SSE registers'
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x004: 'AVX registers'
+[2025-07-10 17:16:56.984774] Session 192.168.91.100_1752165830: Command: nmap -p 22 dev2@192.168.91.100
+[2025-07-10 17:16:58.395572] Session 192.168.91.100_1752165830: Response: Starting Nmap 7.92 ( https://nmap.org ) at 2023-02-20 14:30 UTC
+Nmap scan report for dev2 (192.168.91.100)
+Host is up (0.00043s latency).
+PORT   STATE SERVICE
+22/tcp open  ssh
+MAC Address: 00:11:22:33:44:55 (Unknown)
+Nmap done: 1 IP address (1 host up) scanned in 0.05 seconds
+[2025-07-10 17:19:09.862773] Session 192.168.91.100_1752165830: Command: for i in {1..100}; do ssh dev2@192.168.91.100 & done
+[2025-07-10 17:19:10.773160] Session 192.168.91.100_1752165830: Response: [1] 1234
+[2] 1235
+[3] 1236
+...
+[100] 1333
+[2025-07-10 17:23:18.515163] Session 192.168.91.100_1752165830: Command: tail -f /var/log/auth.log
+[2025-07-10 17:23:20.190159] Session 192.168.91.100_1752165830: Response: Apr 12 14:30:01 web-server sshd[1234]: Accepted password for admin from 127.0.0.1 port 4444 ssh2
+Apr 12 14:30:01 web-server sshd[1234]: pam_unix(sshd:session): session opened for user admin by (uid=0)
+Apr 12 14:30:02 web-server sshd[1235]: Connection from 192.168.1.100 port 5555 on 192.168.1.100 port 22
+Apr 12 14:30:03 web-server sshd[1235]: Accepted publickey for dev1 from 192.168.1.100 port 5555 ssh2
+Apr 12 14:30:04 web-server sshd[1235]: pam_unix(sshd:session): session opened for user dev1 by (uid=1001)
+[2025-07-10 17:25:48.910163] Session 192.168.91.100_1752165830: Command: for i in {1..500}; do ssh dev2@192.168.91.100 & done
+[2025-07-10 17:25:50.355399] Session 192.168.91.100_1752165830: Response: [1] 1234
+[2] 1235
+[3] 1236
+...
+[499] 1732
+[500] 1733
+[2025-07-10 17:27:19.985862] Session 192.168.91.100_1752165830: Command: dmesg | tail
+[2025-07-10 17:27:22.673997] Session 192.168.91.100_1752165830: Response: [    0.000000] Linux version 5.4.0-122-generic (buildd@lcy01-amd64-021) (gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.1)) #122-Ubuntu SMP Thu Oct 13 14:04:21 UTC 2022 (Ubuntu 5.4.0-122.122-generic 5.4.144)
+[    0.000000] Command line: BOOT_IMAGE=/boot/vmlinuz-5.4.0-122-generic root=UUID=1234567890 ro quiet splash
+[    0.000000] KERNEL supported cpus:
+[    0.000000]   Intel GenuineIntel
+[    0.000000]   AMD AuthenticAMD
+[    0.000000]   Centaur CentaurHauls
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x001: 'x87 floating point registers'
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x002: 'SSE registers'
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x004: 'AVX registers'
+[    0.000000] x86/fpu: xstate_offset[2]:  576, xstate_sizes[2]:   256
+[    0.000000] x86/fpu: xstate_offset[3]:  832, xstate_sizes[3]:   256
+[    0.000000] x86/fpu: xstate_offset[4]: 1088, xstate_sizes[4]:   256
+[2025-07-10 17:31:18.090034] Session 192.168.91.100_1752165830: Command: nmap -p 22 guest@192.168.100.100
+[2025-07-10 17:31:19.387831] Session 192.168.91.100_1752165830: Response: Starting Nmap 7.92 ( https://nmap.org ) at 2023-02-20 14:30 UTC
+Nmap scan report for 192.168.100.100
+Host is up (0.00043s latency).
+PORT   STATE SERVICE
+22/tcp open  ssh
+Nmap done: 1 IP address (1 host up) scanned in 0.05 seconds
+[2025-07-10 17:31:24.352640] Session 192.168.91.100_1752165830: Command: nmap -p 22 guest@192.168.100.100
+[2025-07-10 17:31:24.826206] Session 192.168.91.100_1752165830: Response: bash: command not found
+[2025-07-10 17:33:41.774671] Session 192.168.91.100_1752165830: Command: slowloris guesst@192.168.100.100 -p 22
+[2025-07-10 17:33:42.577272] Session 192.168.91.100_1752165830: Response: bash: slowloris: command not found
+[2025-07-10 17:34:35.805674] Session 192.168.91.100_1752165830: Command: tail -f /var/log/auth.log
+[2025-07-10 17:34:37.606642] Session 192.168.91.100_1752165830: Response: Apr 12 14:30:01 web-server sshd[1234]: Accepted password for admin from 127.0.0.1 port 4444 ssh2
+Apr 12 14:30:01 web-server sshd[1234]: pam_unix(sshd:session): session opened for user admin by (uid=0)
+Apr 12 14:30:02 web-server sshd[1235]: Connection from 192.168.1.100 port 5555 on 192.168.1.100 port 22
+Apr 12 14:30:03 web-server sshd[1235]: Accepted publickey for dev1 from 192.168.1.100 port 5555 ssh2
+Apr 12 14:30:04 web-server sshd[1235]: pam_unix(sshd:session): session opened for user dev1 by (uid=1001)
+[2025-07-10 17:36:11.331554] Session 192.168.91.100_1752165830: Command: stress --cpu 2 --io 1 --vm 1 --vm-bytes 128M --timeout 10s
+[2025-07-10 17:36:12.552293] Session 192.168.91.100_1752165830: Response: stress: info: [1] dispatching hogs: 2 cpu, 1 io, 1 vm, 0 hdd
+[2025-07-10 17:36:55.938824] Session 192.168.91.100_1752165830: Command: echo 'Denial of Service test complete'
+[2025-07-10 17:36:56.963280] Session 192.168.91.100_1752165830: Response: Denial of Service test complete
+[2025-07-10 17:37:46.851506] Session 192.168.91.100_1752165830: Command: nmap -p 22 admin@192.168.100.1034
+[2025-07-10 17:37:48.232577] Session 192.168.91.100_1752165830: Response: Starting Nmap 7.92 ( https://nmap.org ) at 2023-02-20 14:30 UTC
+Nmap scan report for 192.168.100.10
+Host is up (0.00043s latency).
+PORT   STATE SERVICE
+22/tcp open  ssh
+MAC Address: 00:11:22:33:44:55 (Unknown)
+Nmap done: 1 IP address (1 host up) scanned in 0.05 seconds
+[2025-07-10 17:39:53.458119] Session 192.168.91.100_1752165830: Command: for i in {1..100}; do ssh admin@192.168.100.134 admin@192.168.100.134                     & done
+[2025-07-10 17:39:55.056278] Session 192.168.91.100_1752165830: Response: [1] 1234
+[2] 1235
+[3] 1236
+...
+[100] 1334
+(Note: The output represents the SSH connections being established in the background, with each connection being assigned a unique process ID)
+[2025-07-10 17:40:40.134111] Session 192.168.91.100_1752165830: Command: for i in {1..100}; do ssh admin@192.168.100.134 & done
+[2025-07-10 17:40:41.062346] Session 192.168.91.100_1752165830: Response: [1] 1234
+[2] 1235
+[3] 1236
+...
+[100] 1333
+[2025-07-10 17:41:24.365419] Session 192.168.91.100_1752165830: Command: watch -n1 'netstat -anp | grep :22'
+[2025-07-10 17:41:26.057205] Session 192.168.91.100_1752165830: Response: Every 1.0s: netstat -anp | grep :22
+tcp        0      0 0.0.0.0:22              *:*               LISTEN      1234/sshd
+tcp6       0      0 :::22                   :::*              LISTEN      1234/sshd
+unix  2      [ ACC ]     STREAM     LISTENING     12345  /var/run/sshd
+unix  2      [ ACC ]     STREAM     LISTENING     12346  /var/run/ssh-agent
+[2025-07-10 17:43:20.262804] Session 192.168.91.100_1752165830: Command: for i in {1..500}; do ssh admin@192.168.100.134 & done
+[2025-07-10 17:43:21.541063] Session 192.168.91.100_1752165830: Response: [1] 1234
+[2] 1235
+[3] 1236
+...
+[499] 1732
+[500] 1733
+[2025-07-10 17:44:30.054519] Session 192.168.91.100_1752165830: Command: uptime
+[2025-07-10 17:44:31.009479] Session 192.168.91.100_1752165830: Response: 23:59:59 up 10:23,  0 users,  load average: 0.00, 0.00, 0.00
+[2025-07-10 17:45:17.655723] Session 192.168.91.100_1752165830: Command: nmap -p 22 admin@192.168.100.13491.134
+[2025-07-10 17:45:19.105101] Session 192.168.91.100_1752165830: Response: Starting Nmap 7.92 ( https://nmap.org ) at 2023-02-20 14:30 UTC
+Nmap scan report for 192.168.100.134
+Host is up (0.00043s latency).
+PORT   STATE SERVICE
+22/tcp open  ssh
+Nmap done: 1 IP address (1 host up) scanned in 0.05 seconds
+[2025-07-10 17:47:15.652108] Session 192.168.91.100_1752165830: Command: hping3 -S -p 22 --flood  admin@192.168.91.134
+[2025-07-10 17:47:16.430229] Session 192.168.91.100_1752165830: Response: bash: hping3: command not found
+[2025-07-10 17:47:41.100651] Session 192.168.91.100_1752165830: Command: tail -f /var/log/auth.log
+[2025-07-10 17:47:41.778309] Session 192.168.91.100_1752165830: Response: bash: command not found
+[2025-07-10 17:48:01.282504] Session 192.168.91.100_1752165830: Command: tail -f /var/log/auth.log
+[2025-07-10 17:48:03.017706] Session 192.168.91.100_1752165830: Response: Apr 12 14:30:01 web-server sshd[1234]: Accepted password for admin from 127.0.0.1 port 4444 ssh2
+Apr 12 14:30:01 web-server sshd[1234]: pam_unix(sshd:session): session opened for user admin by (uid=0)
+Apr 12 14:30:02 web-server sshd[1235]: Connection from 192.168.1.100 port 5555 on 192.168.1.100 port 22
+Apr 12 14:30:03 web-server sshd[1235]: Accepted key for dev1 from 192.168.1.100 port 5555 ssh2
+Apr 12 14:30:04 web-server sshd[1235]: pam_unix(sshd:session): session opened for user dev1 by (uid=1001)
+[2025-07-10 17:49:12.334015] Session 192.168.91.100_1752165830: Command: 
+[2025-07-10 17:49:12.335611] Session 192.168.91.100_1752165830: Response: Reverted to admin
+[2025-07-10 17:49:19.072820] Session 192.168.91.100_1752165830: Command: cd ..
+[2025-07-10 17:49:19.075782] Session 192.168.91.100_1752165830: Response: 
+[2025-07-10 17:49:26.297455] Session 192.168.91.100_1752169766: Connection established from 192.168.91.100
+[2025-07-10 17:49:27.624813] Session 192.168.91.100_1752169766: Login: admin/
+[2025-07-10 17:49:30.146094] Session 192.168.91.100_1752169766: Command: cd ..
+[2025-07-10 17:49:30.147859] Session 192.168.91.100_1752169766: Response: 
+[2025-07-10 17:49:38.357135] Session 192.168.91.100_1752169766: Command: stress --cpu 2 --io 1 --vm 1 --vm-bytes 128M --timeout 10s
+[2025-07-10 17:49:39.543167] Session 192.168.91.100_1752169766: Response: stress: info: [1] dispatching hogs: 2 cpu, 1 io, 1 vm, 0 hdd
+[2025-07-10 17:50:13.321249] Session 192.168.91.100_1752169766: Command: echo 'Denial of Service test complete'
+[2025-07-10 17:50:14.447155] Session 192.168.91.100_1752169766: Response: Denial of Service test complete
+[2025-07-10 17:51:06.058157] Session 192.168.91.100_1752169766: Command: naamap -p 22 dev2user1@192.168.91.134
+[2025-07-10 17:51:06.585979] Session 192.168.91.100_1752169766: Response: bash: command not found
+[2025-07-10 17:51:28.046631] Session 192.168.91.100_1752169766: Command: nmap -p 22 dev1@192.168.91.134
+[2025-07-10 17:51:29.469876] Session 192.168.91.100_1752169766: Response: Starting Nmap 7.92 ( https://nmap.org ) at 2023-02-20 14:30 UTC
+Nmap scan report for dev1 (192.168.91.134)
+Host is up (0.00043s latency).
+PORT   STATE SERVICE
+22/tcp open  ssh
+MAC Address: 00:11:22:33:44:55 (Unknown)
+Nmap done: 1 IP address (1 host up) scanned in 0.05 seconds
+[2025-07-10 17:52:52.627225] Session 192.168.91.100_1752169766: Command: Nmap done: 1 IP address (1 host up) scanned in 0.05 seconds
+[2025-07-10 17:52:53.793582] Session 192.168.91.100_1752169766: Response: ```
+admin@web-server:/home$
+```
+[2025-07-10 17:53:10.017386] Session 192.168.91.100_1752169766: Command: hping3 -S -p 22 --flood dev1@192.168.91.134
+[2025-07-10 17:53:10.809293] Session 192.168.91.100_1752169766: Response: bash: hping3: command not found
+[2025-07-10 17:53:45.613977] Session 192.168.91.100_1752169766: Command: tail -f /var/log/auth.log
+[2025-07-10 17:53:47.190544] Session 192.168.91.100_1752169766: Response: Apr 12 14:30:01 web-server sshd[1234]: Accepted password for admin from 127.0.0.1 port 54321 ssh2
+Apr 12 14:30:01 web-server sshd[1234]: pam_unix(sshd:session): session opened for user admin by (uid=0)
+Apr 12 14:30:02 web-server sshd[1235]: Connection from 127.0.0.1 port 54322 on 127.0.0.1 port 22
+Apr 12 14:30:02 web-server sshd[1235]: Accepted password for dev1 from 127.0.0.1 port 54322 ssh2
+Apr 12 14:30:02 web-server sshd[1235]: pam_unix(sshd:session): session opened for user dev1 by (uid=0)
+[2025-07-10 17:56:42.761751] Session 192.168.91.100_1752169766: Command: python3 -c 'import socket; [socket.create_connection(("dev1@192.168.91.134", 22)) for _ inpython3 -c 'import socket; [socket.create_connection(("dev1@192.168.91.134", 22)) for _ in
+[2025-07-10 17:56:43.767265] Session 192.168.91.100_1752169766: Response: bash: command not found
+[2025-07-10 17:57:05.968516] Session 192.168.91.100_1752169766: Command: python3 -c 'import socket; [socket.create_connection((dev1@192.168.91.134, 22)) for _ in
+[2025-07-10 17:57:06.949435] Session 192.168.91.100_1752169766: Response: bash: python3: command not found
+[2025-07-10 17:57:51.878836] Session 192.168.91.100_1752169766: Command: python -c 'import socket; [socket.create_connection((dev1@192.168.91.134, 22)) for _ in
+[2025-07-10 17:57:52.815263] Session 192.168.91.100_1752169766: Response: bash: command not found
+[2025-07-10 17:58:25.926153] Session 192.168.91.100_1752169766: Command: echo 'Denial of Service test complete'
+[2025-07-10 17:58:26.767004] Session 192.168.91.100_1752169766: Response: bash: command not found
+[2025-07-10 17:59:04.041691] Session 192.168.91.100_1752169766: Command: enial of Service t
+[2025-07-10 17:59:04.715438] Session 192.168.91.100_1752169766: Response: bash: command not found
+[2025-07-10 17:59:31.566739] Session 192.168.91.100_1752169766: Command: masscan -p22 --rate=1000 dev2@192.168.91.10034
+[2025-07-10 17:59:36.153654] Session 192.168.91.100_1752169766: Response: OpenBSD sshd 8.9p1, OpenSSL 3.0.2 15 Mar 2022
+debug1: reading configuration data /etc/ssh/sshd_config
+debug1: /etc/ssh/sshd_config line 52: Applying options for *
+debug1: Bind to port 22 on ::.
+Server listening on :: port 22.
+debug1: Bind to port 22 on 0.0.0.0.
+Server listening on 0.0.0.0 port 22.
+debug1: Server will not fork when running in debugging mode.
+debug1: rexec start in 5 out 5 newsock 5 pipe -1 sock 8
+debug1: inetd sockets after dupping: 3, 3
+Connection from 192.168.91.100 port 3434 on 192.168.91.100 port 3434
+debug1: Client protocol version 2.0; client software version OpenSSH_8.9p1
+debug1: match: OpenSSH_8.9p1 pat OpenSSH* compat 0x04000000
+debug1: Enabling compatibility mode for protocol 2.0
+debug1: Local version string SSH-2.0-OpenSSH_8.9p1
+debug1: Authenticating to: port 3434 as 'dev2'
+debug1: SSH2_MSG_KEXINIT sent
+debug1: SSH2_MSG_KEXINIT received
+debug1: kex: algorithm: curve25519-sha256
+debug1: kex: host key algorithm: ssh-rsa
+debug1: kex: client->server cipher: chacha20-poly1305@openssh.com MAC: <implicit> compression: none
+debug1: kex: server->client cipher: chacha20-poly1305@openssh.com MAC: <implicit> compression: none
+debug1: expecting SSH2_MSG_KEX_ECDH_REPLY
+debug1: Host '192.168.91.100' is known and matches the RSA host key.
+debug1: Found key in /home/admin/.ssh/known_hosts:1
+debug1: rekey out after 134217728 blocks
+debug1: SSH2_MSG_NEWKEYS sent
+debug1: expecting SSH2_MSG_NEWKEYS
+debug1: SSH2_MSG_NEWKEYS received
+debug1: rekey in after 134217728 blocks
+debug1: Will attempt key: /home/admin/.ssh/id_rsa
+debug1: Will attempt key: /home/admin/.ssh/id_dsa
+debug1: Will attempt key: /home/admin/.ssh/id_ecdsa
+debug1: Will attempt key: /home/admin/.ssh/id_ed25519
+debug1: SSH2_MSG_SERVICE_ACCEPT received
+debug1: Authentications that can continue: publickey,password
+debug1: Next authentication method: publickey
+debug1: Trying private key: /home/admin/.ssh/id_rsa
+debug1: Trying private key: /home/admin/.ssh/id_dsa
+debug1: Trying private key: /home/admin/.ssh/id_ecdsa
+debug1: Trying private key: /home/admin/.ssh/id_ed25519
+debug1: No more authentication methods to try.
+dev2@192.168.91.100: Permission denied (publickey,password).
+[2025-07-10 18:09:01.350015] Session 192.168.91.100_1752169766: Command: hping3 -S -p 22 --flood dev2@192.168.91.134
+[2025-07-10 18:09:03.279396] Session 192.168.91.100_1752169766: Response: HPING dev2@192.168.91.134 (eth0 192.168.91.134): S set, 40 data bytes
+len=46 ip=192.168.91.134 ttl=64 DF id=0 tos=0 iplen=46
+seq=0 win=51200 syn ack 1024
+len=40 ip=192.168.91.134 ttl=64 DF id=0 tos=0 iplen=40
+seq=1 win=51200 ack 1025
+len=40 ip=192.168.91.134 ttl=64 DF id=0 tos=0 iplen=40
+seq=2 win=51200 ack 1026
+...
+[2025-07-10 18:11:46.781767] Session 192.168.91.100_1752169766: Command: tail -f /var/log/auth.log
+[2025-07-10 18:11:47.471378] Session 192.168.91.100_1752169766: Response: bash: command not found
+[2025-07-10 18:12:59.455156] Session 192.168.91.100_1752169766: Command: 
+[2025-07-10 18:12:59.476004] Session 192.168.91.100_1752169766: Response: Reverted to admin
+[2025-07-10 18:13:04.563724] Session 192.168.91.100_1752169766: Command: cd ..
+[2025-07-10 18:13:04.597311] Session 192.168.91.100_1752169766: Response: 
+[2025-07-10 18:13:11.345361] Session 192.168.91.100_1752169766: Command: tail -f /var/log/auth.log
+[2025-07-10 18:13:12.193728] Session 192.168.91.100_1752169766: Response: bash: command not found
+[2025-07-10 18:14:48.000809] Session 192.168.91.100_1752169766: Command: python3 -c 'import socket; [socket.create_connection((dev2@192.168.91.134, 22)) for _ in
+[2025-07-10 18:14:48.510539] Session 192.168.91.100_1752169766: Response: bash: command not found
+[2025-07-10 18:15:58.013750] Session 192.168.91.100_1752169766: Command: dmesg | tail
+[2025-07-10 18:15:58.931938] Session 192.168.91.100_1752169766: Response: bash: command not found
+[2025-07-10 18:16:27.080203] Session 192.168.91.100_1752169766: Command: dmesg | tail
+[2025-07-10 18:16:28.255291] Session 192.168.91.100_1752169766: Response: bash: command not found
+[2025-07-10 18:16:38.001263] Session 192.168.91.100_1752171397: Connection established from 192.168.91.100
+[2025-07-10 18:16:41.383236] Session 192.168.91.100_1752171397: Login: admin/
+[2025-07-10 18:16:44.366810] Session 192.168.91.100_1752171397: Command: cd ..
+[2025-07-10 18:16:44.367576] Session 192.168.91.100_1752171397: Response: 
+[2025-07-10 18:16:47.129061] Session 192.168.91.100_1752171397: Command: dmesg | tail
+[2025-07-10 18:16:48.241607] Session 192.168.91.100_1752171397: Response: bash: command not found
+[2025-07-10 18:59:46.061294] Session 192.168.91.100_1752171397: Command: nmap -p 22 backup
+[2025-07-10 18:59:49.879394] Session 192.168.91.100_1752171397: Response: Starting Nmap 7.92 ( https://nmap.org ) at 2023-02-20 14:30 UTC
+Nmap scan report for backup (127.0.1.1)
+Host is up (0.00022s latency).
+PORT   STATE SERVICE
+22/tcp open  ssh
+MAC Address: 00:11:22:33:44:55 (Unknown)
+Nmap done: 1 IP address (1 host up) scanned in 0.05 seconds
+[2025-07-10 19:07:19.146356] Session 192.168.91.100_1752174439: Connection established from 192.168.91.100
+[2025-07-10 19:07:22.661766] Session 192.168.91.100_1752174439: Login: admin/[F
+[2025-07-10 19:08:00.087026] Session 192.168.91.100_1752174439: Command: nmap -p [B[B b[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cbackup_user@[F[5~[B[3~[F[C[A[3~[5~[F[3~[F[6~[D
+[2025-07-10 19:08:01.598916] Session 192.168.91.100_1752174439: Response: Starting Nmap 7.80 ( https://nmap.org ) at 2023-02-20 14:30 UTC
+Nmap scan report for web-server (127.0.1.1)
+Host is up (0.00043s latency).
+PORT      STATE SERVICE
+22/tcp    open  ssh
+80/tcp    open  http
+3306/tcp  open  mysql
+Not shown: 65532 closed ports
+MAC Address: 00:11:22:33:44:55 (Unknown)
+Nmap done: 1 IP address (1 host up) scanned in 13.45 seconds
+[2025-07-10 19:08:35.193082] Session 192.168.91.100_1752174439: Command: [B[B[A[Abacknmap -p [B[B [A[A[D22 backup_user@192.168.91.134
+[2025-07-10 19:08:35.800883] Session 192.168.91.100_1752174439: Response: bash: command not found
+[2025-07-10 19:08:45.096263] Session 192.168.91.100_1752174439: Command: cd ..
+[2025-07-10 19:08:45.096451] Session 192.168.91.100_1752174439: Response: 
+[2025-07-10 19:09:03.737271] Session 192.168.91.100_1752174439: Command: nmap -p 22 backup_user@192.168.91.134
+[2025-07-10 19:09:04.273145] Session 192.168.91.100_1752174439: Response: bash: command not found
+[2025-07-10 19:09:32.660175] Session 192.168.91.100_1752174439: Command: nmP ap -p 22 uguest@192.168.91.134
+[2025-07-10 19:09:33.335439] Session 192.168.91.100_1752174439: Response: bash: command not found
+[2025-07-10 19:10:21.766436] Session 192.168.91.100_1752174439: Command: https://console.groq.com/keys
+[2025-07-10 19:10:22.265215] Session 192.168.91.100_1752174439: Response: bash: command not found
+[2025-07-10 19:10:49.174684] Session 192.168.91.100_1752174439: Command: nmap -p 22 guest@192.168.91.134
+[2025-07-10 19:10:49.840242] Session 192.168.91.100_1752174439: Response: bash: command not found
+[2025-07-10 19:11:12.449149] Session 192.168.91.100_1752174439: Command: nmap -p 22 admnin@192.168.91.134
+[2025-07-10 19:11:13.093647] Session 192.168.91.100_1752174439: Response: bash: command not found
+[2025-07-10 19:11:16.910956] Session 192.168.91.100_1752174439: Command: exit
+[2025-07-10 19:11:16.911310] Session 192.168.91.100_1752174439: Response: Reverted to admin
+[2025-07-10 19:11:19.458690] Session 192.168.91.100_1752174439: Command: ls
+[2025-07-10 19:11:19.520845] Session 192.168.91.100_1752174439: Response: Desktop
+Documents
+.ssh
+scripts
+.bash_history
+.bashrc
+[2025-07-10 19:11:30.370834] Session 192.168.91.100_1752174439: Command: nmap -p 22 guest@192.168.91.134
+[2025-07-10 19:11:30.913955] Session 192.168.91.100_1752174439: Response: bash: command not found
+[2025-07-10 19:11:34.968403] Session 192.168.91.100_1752174439: Command: cd ..
+[2025-07-10 19:11:34.968586] Session 192.168.91.100_1752174439: Response: 
+[2025-07-10 19:11:37.880683] Session 192.168.91.100_1752174439: Command: nmap -p 22 guest@192.168.91.134
+[2025-07-10 19:11:38.595708] Session 192.168.91.100_1752174439: Response: bash: command not found
+[2025-07-10 19:11:44.956388] Session 192.168.91.100_1752174704: Connection established from 192.168.91.100
+[2025-07-10 19:11:46.654241] Session 192.168.91.100_1752174704: Login: admin/1
+[2025-07-10 19:11:49.730466] Session 192.168.91.100_1752174704: Command: cd ..
+[2025-07-10 19:11:49.730539] Session 192.168.91.100_1752174704: Response: 
+[2025-07-10 19:12:13.835557] Session 192.168.91.100_1752174704: Command: nmap -p 22 guest@192.168.91.134
+[2025-07-10 19:12:14.341394] Session 192.168.91.100_1752174704: Response: bash: command not found
+[2025-07-10 19:12:50.844477] Session 192.168.91.100_1752174704: Command: nmap -p 22 guest@192.168.91.134
+[2025-07-10 19:12:51.511171] Session 192.168.91.100_1752174704: Response: bash: command not found
+[2025-07-10 19:13:04.435721] Session 192.168.91.100_1752174704: Command: ls
+[2025-07-10 19:13:04.436318] Session 192.168.91.100_1752174704: Response: 
+[2025-07-10 19:13:07.687096] Session 192.168.91.100_1752174704: Command: cd ..
+[2025-07-10 19:13:07.687720] Session 192.168.91.100_1752174704: Response: 
+[2025-07-10 19:13:09.097688] Session 192.168.91.100_1752174704: Command: ls
+[2025-07-10 19:13:09.097782] Session 192.168.91.100_1752174704: Response: 
+[2025-07-10 19:13:13.235994] Session 192.168.91.100_1752174704: Command: cd home
+[2025-07-10 19:13:13.236110] Session 192.168.91.100_1752174704: Response: 
+[2025-07-10 19:13:18.115520] Session 192.168.91.100_1752174704: Command: cd ls
+[2025-07-10 19:13:18.115895] Session 192.168.91.100_1752174704: Response: 
+[2025-07-10 19:13:21.906276] Session 192.168.91.100_1752174704: Command: ls
+[2025-07-10 19:13:21.906394] Session 192.168.91.100_1752174704: Response: 
+[2025-07-10 19:13:24.344975] Session 192.168.91.100_1752174704: Command: cd ..
+[2025-07-10 19:13:24.345222] Session 192.168.91.100_1752174704: Response: 
+[2025-07-10 19:13:27.988119] Session 192.168.91.100_1752174704: Command: cd ls
+[2025-07-10 19:13:27.988211] Session 192.168.91.100_1752174704: Response: 
+[2025-07-10 19:13:33.278866] Session 192.168.91.100_1752174704: Command: exit
+[2025-07-10 19:13:33.816267] Session 192.168.91.100_1752174704: Response: bash: command not found
+[2025-07-10 19:13:35.934929] Session 192.168.91.100_1752174704: Command: exit
+[2025-07-10 19:13:35.935155] Session 192.168.91.100_1752174704: Response: Reverted to admin
+[2025-07-10 19:13:40.195948] Session 192.168.91.100_1752174704: Command: clls
+[2025-07-10 19:13:40.576415] Session 192.168.91.100_1752174704: Response: bash: command not found
+[2025-07-10 19:13:44.075753] Session 192.168.91.100_1752174704: Command: pwd
+[2025-07-10 19:13:44.458271] Session 192.168.91.100_1752174704: Response: bash: command not found
+[2025-07-10 19:13:53.394628] Session 192.168.91.100_1752174704: Command: cd Documents
+[2025-07-10 19:13:53.395255] Session 192.168.91.100_1752174704: Response: 
+[2025-07-10 19:13:55.041175] Session 192.168.91.100_1752174704: Command: ls
+[2025-07-10 19:13:55.072891] Session 192.168.91.100_1752174704: Response: passwords.txt
+notes.txt
+api_keys.yml
+[2025-07-10 19:14:03.938019] Session 192.168.91.100_1752174704: Command: cat parsswords.tsxrt
+[2025-07-10 19:14:03.948434] Session 192.168.91.100_1752174704: Response: cat: parsswords.tsxrt: No such file or directory
+[2025-07-10 19:14:13.880865] Session 192.168.91.100_1752174704: Command: cat passworsdds.txt
+[2025-07-10 19:14:13.891231] Session 192.168.91.100_1752174704: Response: cat: passworsdds.txt: No such file or directory
+[2025-07-10 19:16:19.483687] Session 192.168.91.100_1752174979: Connection established from 192.168.91.100
+[2025-07-10 19:16:26.319112] Session 192.168.91.100_1752174986: Connection established from 192.168.91.100
+[2025-07-10 19:16:30.298588] Session 192.168.91.100_1752174986: Login: admin/1
+[2025-07-10 19:16:33.881204] Session 192.168.91.100_1752174986: Command: cd ..
+[2025-07-10 19:16:33.881955] Session 192.168.91.100_1752174986: Response: 
+[2025-07-10 19:16:51.895519] Session 192.168.91.100_1752174986: Command: nmap -p 22 guest@192.168.91.134
+[2025-07-10 19:16:53.446359] Session 192.168.91.100_1752174986: Response: Starting Nmap 7.92 ( https://nmap.org ) at 2023-02-20 14:30 UTC
+Nmap scan report for 192.168.91.134
+Host is up (0.00043s latency).
+PORT   STATE SERVICE
+22/tcp open  ssh
+Nmap done: 1 IP address (1 host up) scanned in 0.05 seconds
+[2025-07-10 19:18:51.119955] Session 192.168.91.100_1752174986: Command: slowloris guest@192.168.91.134 -p 22
+[2025-07-10 19:18:51.546151] Session 192.168.91.100_1752174986: Response: bash: command not found
+[2025-07-10 19:19:21.934180] Session 192.168.91.100_1752174986: Command: sloqwloris -p 22 guest@192.168.91.134
+[2025-07-10 19:19:22.513069] Session 192.168.91.100_1752174986: Response: bash: command not found
+[2025-07-10 19:20:03.143585] Session 192.168.91.100_1752174986: Command: ash: command not found
+[2025-07-10 19:20:03.779522] Session 192.168.91.100_1752174986: Response: bash: command not found
+[2025-07-10 19:20:14.040541] Session 192.168.91.100_1752174986: Command: dstat -c --top-io
+[2025-07-10 19:20:14.535075] Session 192.168.91.100_1752174986: Response: bash: command not found
+[2025-07-10 19:21:28.671989] Session 192.168.91.100_1752175288: Connection established from 192.168.91.100
+[2025-07-10 19:21:31.870455] Session 192.168.91.100_1752175288: Login: admin/1
+[2025-07-10 19:21:41.650560] Session 192.168.91.100_1752175288: Command: slowloris guest@192.168.91.134 -p 22
+[2025-07-10 19:21:42.600190] Session 192.168.91.100_1752175288: Response: bash: slowloris: command not found
+[2025-07-10 19:21:45.858875] Session 192.168.91.100_1752175288: Command: cd ..
+[2025-07-10 19:21:45.859011] Session 192.168.91.100_1752175288: Response: 
+[2025-07-10 19:21:54.272105] Session 192.168.91.100_1752175288: Command: dstat -c --top-io
+[2025-07-10 19:21:55.953714] Session 192.168.91.100_1752175288: Response: dstat -c --top-io
+----total-cpu-usage----
+usr sys idl wai hiq siq
+1   1  98   0   0   0
+----disk-usage----
+reads writs
+0    0
+----most-expensive-disk-usage----
+proc  MB  read  writ
+md0   0   0   0
+sda1  0   0   0
+----most-expensive-io----
+proc  MB  read  writ
+md0   0   0   0
+sda1  0   0   0
+[2025-07-10 19:24:48.228597] Session 192.168.91.100_1752175288: Command: stress --cpu 2 --io 1 --vm 1 --vm-bytes 128M --timeout 10s
+[2025-07-10 19:24:49.270959] Session 192.168.91.100_1752175288: Response: stress: info: [1] dispatching hogs: 2 cpu, 1 io, 1 vm, 0 hdd
+[2025-07-10 19:26:19.855642] Session 192.168.91.100_1752175288: Command: hydra -l root -P pass.txt ssh://admin@192.168.100.100
+[2025-07-10 19:26:22.241620] Session 192.168.91.100_1752175288: Response: [hydra v9.3]
+Copyright (C) 2022 by van Hauser/THC - Please do not use in military or secret service organizations, or for illegal purposes.
+Hydra (http://www.thc.org/thc-hydra) starting at 2023-02-20 14:30:45
+[INFO] Testing password file: pass.txt
+[DATA] max 16 tasks per 1 server, overall 16 tasks, 16 login tries (l:1/p:16), ~1 try per task
+[DATA] attacking ssh://admin@192.168.100.100:22/
+[22][ssh] host: 192.168.100.100   login: admin   password: admin123
+1 of 1 target successfully completed, 1 valid password found
+Hydra (http://www.thc.org/thc-hydra) finished at 2023-02-20 14:30:47
+[2025-07-10 19:29:03.212080] Session 192.168.91.100_1752175288: Command: slowloris admin@192.168.100.100 -p 22
+[2025-07-10 19:29:03.616002] Session 192.168.91.100_1752175288: Response: bash: command not found
+[2025-07-10 19:29:34.522379] Session 192.168.91.100_1752175288: Command: watch -n1 'netstat -anp | grep :22'
+[2025-07-10 19:29:35.912338] Session 192.168.91.100_1752175288: Response: Every 1.0s: netstat -anp | grep :22
+tcp        0      0 0.0.0.0:22              *:*               LISTEN      1141/sshd
+tcp6       0      0 :::22                   :::*              LISTEN      1141/sshd
+unix  2      [ ACC ]     STREAM     LISTENING     1143 1141/sshd         /var/run/sshd
+Note: The output will update every 1 second as per the `watch` command.
+[2025-07-10 19:31:22.535230] Session 192.168.91.100_1752175288: Command: python3 -c 'import socket; [socket.create_connection((admin@192.168.91100.100,22))for_in
+[2025-07-10 19:31:23.058693] Session 192.168.91.100_1752175288: Response: bash: python3: command not found
+[2025-07-10 19:31:54.101242] Session 192.168.91.100_1752175288: Command: dmesg | tail
+[2025-07-10 19:31:57.884177] Session 192.168.91.100_1752175288: Response: [    0.000000] Linux version 5.4.0-122-generic (buildd@lcy01-amd64-022) (gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.1)) #1-Ubuntu SMP Thu Jun 16 13:03:06 UTC 2022 (Ubuntu 5.4.0-122.137-generic 5.4.122)
+[    0.000000] Command line: BOOT_IMAGE=/boot/vmlinuz-5.4.0-122-generic root=UUID=1234567890 ro quiet splash vt.handoff=7
+[    0.000000] KERNEL supported cpus:
+[    0.000000]   Intel GenuineIntel
+[    0.000000]   AMD AuthenticAMD
+[    0.000000]   Centaur CentaurHauls
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x001: 'x87 floating point registers'
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x002: 'SSE registers'
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x004: 'AVX registers'
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x008: 'AVX-512 opcode'
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x010: 'MPX bounds'
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x020: 'AVX-512 ZMMs'
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x040: 'AVX-512 Hi256'
+[    0.000000] x86/fpu: xstate_offset[2]:  576, xstate_sizes[2]:   64
+[    0.000000] x86/fpu: xstate_offset[3]:  640, xstate_sizes[3]:   64
+[    0.000000] x86/fpu: xstate_offset[4]:  704, xstate_sizes[4]:   64
+[    0.000000] x86/fpu: xstate_offset[5]:  768, xstate_sizes[5]:   64
+[    0.000000] x86/fpu: xstate_offset[6]:  832, xstate_sizes[6]:   64
+[    0.000000] x86/fpu: xstate_offset[7]:  896, xstate_sizes[7]:   64
+[    0.000000] x86/fpu: xstate_offset[8]:  960, xstate_sizes[8]:   64
+[    0.000000] x86/fpu: xstate_offset[9]: 1024, xstate_sizes[9]:   64
+[2025-07-10 19:36:02.808137] Session 192.168.91.100_1752175288: Command: masscan -p22 --rate=1000 vbackup_seusserer@192.168.100.100
+[2025-07-10 19:36:03.611962] Session 192.168.91.100_1752175288: Response: OpenBSD SSH-2.0-OpenSSH_8.2p1 Ubuntu 4ubuntu0.2
+[2025-07-10 19:36:49.180962] Session 192.168.91.100_1752175288: Command: masscan -p22 --rate=1000 backup_user@192.168.100.100
+[2025-07-10 19:36:54.050460] Session 192.168.91.100_1752175288: Response: OpenBSD sshd 8.2p1 Ubuntu 4ubuntu0.2, OpenSSL 3.0.2 15 Mar 2022
+debug1: reading configuration data /etc/ssh/sshd_config
+debug1: /etc/ssh/sshd_config line 52: Applying options for *
+debug1: Bind to port 22 on ::.
+Server listening on :: port 22.
+debug1: Bind to port 22 on 0.0.0.0.
+Server listening on 0.0.0.0 port 22.
+Connection from 192.168.100.100 port 49242 on 192.168.100.100 port 22
+debug1: Client protocol version 2.0; client software version OpenSSH_8.2p1 Ubuntu 4ubuntu0.2
+debug1: no match for KEX algorithms [curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group-exchange-sha256,diffie-hellman-group16-sha512,diffie-hellman-group18-sha512,diffie-hellman-group14-sha256]
+debug1: KEX algorithms: curve25519-sha256,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group-exchange-sha256,diffie-hellman-group16-sha512,diffie-hellman-group18-sha512,diffie-hellman-group14-sha256
+debug1: authentication password successfully initialized
+debug1: list of authentication methods: publickey,password
+debug1: authentication methods: publickey,password
+debug1: trying public key file /home/backup_user/.ssh/authorized_keys
+debug1: fd 4 clearing O_NONBLOCK
+debug1: Authentication succeeded (publickey).
+Authenticated to 192.168.100.100 ([192.168.100.100]:22).
+debug1: channel 0: new [client-session]
+debug1: Entering interactive session.
+debug1: pledge: network
+debug1: client_input_global_request: rtype hostkeys-00@openssh.com want_reply 0
+debug1: client_input_global_request: rtype hostkeys-prove-01@openssh.com want_reply 0
+debug1: Sending environment.
+debug1: Sending env LANG = C.UTF-8
+debug1: Sending env LC_CTYPE = C.UTF-8
+debug1: Sending command: ssh-userauth
+debug1: client_input_channel_req: channel 0 rtype exit-status reply 0
+debug1: client_input_channel_req: channel 0 rtype eow@openssh.com reply 0
+debug1: channel 0: free: client-session, nchannels 1
+Connection to 192.168.100.100 closed.
+Transferred: sent 3284, received 3284 bytes, in 0.1 seconds
+Bytes per second: sent 32840.0, received 32840.0
+debug1: Exit status 0
+[2025-07-10 19:38:23.653611] Session 192.168.91.100_1752175288: Command: debug1: /etc/ssh/sshd_config line 52: Applying options for *
+debug1: Bind to port 22 on ::.
+[2025-07-10 19:38:24.434009] Session 192.168.91.100_1752175288: Response: $
+[2025-07-10 19:42:42.739379] Session 192.168.91.100_1752175288: Command: ls
+[2025-07-10 19:42:42.739661] Session 192.168.91.100_1752175288: Response: 
+[2025-07-10 19:43:08.142128] Session 192.168.91.100_1752175288: Command: slowloris backup_user@192.168.100.100
+[2025-07-10 19:43:08.887551] Session 192.168.91.100_1752175288: Response: bash: slowloris: command not found
+[2025-07-10 19:43:38.254613] Session 192.168.91.100_1752175288: Command: tail -f /var/log/auth.log
+[2025-07-10 19:43:39.666551] Session 192.168.91.100_1752175288: Response: Apr 12 14:30:01 web-server sshd[1234]: Accepted password for admin from 127.0.0.1 port 4444 ssh2
+Apr 12 14:30:01 web-server sshd[1234]: pam_unix(sshd:session): session opened for user admin by (uid=0)
+Apr 12 14:30:02 web-server sshd[1235]: Connection from 192.168.1.100 port 5555 on 192.168.1.100 port 22
+Apr 12 14:30:03 web-server sshd[1235]: Accepted key for dev1 from 192.168.1.100 port 5555 ssh2
+Apr 12 14:30:04 web-server sshd[1235]: pam_unix(sshd:session): session opened for user dev1 by (uid=1001)
+[2025-07-10 19:45:10.180597] Session 192.168.91.100_1752175288: Command: for i in {1..500}; do ssh backup_user@192.168.100.100 & done
+[2025-07-10 19:45:10.941665] Session 192.168.91.100_1752175288: Response: [1] 1234
+[2] 1235
+[3] 1236
+...
+[499] 1732
+[500] 1733
+[2025-07-10 19:46:52.344250] Session 192.168.91.100_1752175288: Command: uptime
+[2025-07-10 19:46:53.745336] Session 192.168.91.100_1752175288: Response: 23:59:59 up 12 days,  3:45,  0 users,  load average: 0.00, 0.00, 0.00
+[2025-07-10 19:47:26.822579] Session 192.168.91.100_1752175288: Command: nmap -p 22 dev1@192.168.101.10
+[2025-07-10 19:47:28.491252] Session 192.168.91.100_1752175288: Response: Starting Nmap 7.92 ( https://nmap.org ) at 2023-02-20 14:30 UTC
+Nmap scan report for dev1 (192.168.101.10)
+Host is up (0.00043s latency).
+PORT   STATE SERVICE
+22/tcp open  ssh
+MAC Address: 00:11:22:33:44:55 (Unknown)
+Nmap done: 1 IP address (1 host up) scanned in 0.05 seconds
+[2025-07-10 19:48:47.311392] Session 192.168.91.100_1752175288: Command: for i in {1..100}; do ssh dev1@192.168.101.10 & done
+[2025-07-10 19:48:48.351996] Session 192.168.91.100_1752175288: Response: [1] 1234
+[2] 1235
+[3] 1236
+...
+[100] 1334
+[2025-07-10 19:49:42.315149] Session 192.168.91.100_1752175288: Command: tail -f /var/log/auth.log
+[2025-07-10 19:49:43.539222] Session 192.168.91.100_1752175288: Response: Apr 12 14:30:01 web-server sshd[1234]: Accepted password for admin from 127.0.0.1 port 4444 ssh2
+Apr 12 14:30:01 web-server sshd[1234]: pam_unix(sshd:session): session opened for user admin by (uid=0)
+Apr 12 14:30:02 web-server sshd[1235]: Accepted publickey for dev1 from 127.0.0.1 port 4445 ssh2
+Apr 12 14:30:02 web-server sshd[1235]: pam_unix(sshd:session): session opened for user dev1 by (uid=0)
+[2025-07-10 19:51:20.945446] Session 192.168.91.100_1752175288: Command: for i in {1..500}; do ssh dev1@192.168.101.10 & done
+[2025-07-10 19:51:24.123900] Session 192.168.91.100_1752175288: Response: [1] 1234
+[2] 1235
+[3] 1236
+...
+[499] 1732
+[500] 1733
+[2025-07-10 19:52:03.445667] Session 192.168.91.100_1752175288: Command: uptime
+[2025-07-10 19:52:04.415307] Session 192.168.91.100_1752175288: Response: 23:34:15 up 10:45,  0 users,  load average: 0.00, 0.00, 0.00
+[2025-07-10 19:54:24.598086] Session 192.168.91.100_1752175288: Command: masscan -p22 --rate=1000 dev2@10.81.0.1
+[2025-07-10 19:54:25.455784] Session 192.168.91.100_1752175288: Response: ```
+masscan: error: unknown option `masscan'
+bash: masscan: command not found
+```
+[2025-07-10 19:55:09.052136] Session 192.168.91.100_1752175288: Command: masscan -p22 --rate=1000 dev2@192.168.10.10
+[2025-07-10 19:55:10.288259] Session 192.168.91.100_1752175288: Response: OpenBSD SSH-2.0-OpenSSH_8.2p1 Ubuntu 4ubuntu0.2
+Connection to 192.168.10.10 22 port [tcp/ssh] succeeded!
+[2025-07-10 19:55:20.510040] Session 192.168.91.100_1752175288: Command: masscan -p22 --rate=1000 dev2@192.168.10.10
+[2025-07-10 19:55:22.574474] Session 192.168.91.100_1752175288: Response: OpenBSD SSH-2.0-OpenSSH_8.2p1 Ubuntu 4ubuntu0.2
+Connection to 192.168.10.10 22 port [tcp/ssh] succeeded!
+[2025-07-10 19:56:58.031208] Session 192.168.91.100_1752175288: Command: hping3 -S -p 22 --flood dev2@192.168.10.10
+[2025-07-10 19:56:58.617802] Session 192.168.91.100_1752175288: Response: bash: hping3: command not found
+[2025-07-10 19:58:42.618094] Session 192.168.91.100_1752175288: Command: watch -n1 'netstat -anp | grep :22'
+[2025-07-10 19:58:43.664003] Session 192.168.91.100_1752175288: Response: Every 1.0s: netstat -anp | grep :22
+tcp        0      0 0.0.0.0:22              *:*               LISTEN      1141/sshd
+tcp6       0      0 :::22                   :::*              LISTEN      1141/sshd
+unix  2      [ ACC ]     STREAM     LISTENING     1145 1141/sshd /var/run/sshd
+[2025-07-10 19:59:54.326819] Session 192.168.91.100_1752175288: Command: stress --cpu 2 --io 1 --vm 1 --vm-bytes 128M --timeout 10s
+[2025-07-10 19:59:55.460325] Session 192.168.91.100_1752175288: Response: stress: info: [1] dispatching hogs: 2 cpu, 1 io, 1 vm, 0 hdd
+[2025-07-10 20:00:18.866410] Session 192.168.91.100_1752175288: Command: echo 'Denial of Service test complete'
+[2025-07-10 20:00:19.630411] Session 192.168.91.100_1752175288: Response: Denial of Service test complete
+[2025-07-10 20:01:07.498962] Session 192.168.91.100_1752175288: Command: hydra -l root -P pass.txt ssh://admin@1                                          $ su
+[2025-07-10 20:01:08.173545] Session 192.168.91.100_1752175288: Response: Password:
+[2025-07-10 20:01:11.989230] Session 192.168.91.100_1752175288: Command: sudo su
+[2025-07-10 20:01:11.989807] Session 192.168.91.100_1752175288: Response: 
+[2025-07-10 20:01:27.346348] Session 192.168.91.100_1752175288: Command: hydra -l root -P pass.txt ssh://root@192.168.10.10
+[2025-07-10 20:01:30.566790] Session 192.168.91.100_1752175288: Response: [hydra v9.3]
+Starting Hydra (https://github.com/vanhauser-thc/thc-hydra) at 2023-02-20 14:30:45
+[INFO] 1 task, 1 server, 1 login try (l:1/p:1), ~1 try per task
+[DATA] max 1 task per 1 server, overall: 1 task, 1 server, 1 login try (l:1/p:1), ~1 try per task
+[ATTEMPT] target 192.168.10.10 - login "root" - pass "admin123" - 1 of 1 [child 0] (0/0)
+[ATTEMPT] target 192.168.10.10 - login "root" - pass "devpass456" - 1 of 1 [child 0] (0/0)
+[ATTEMPT] target 192.168.10.10 - login "root" - pass "devpass789" - 1 of 1 [child 0] (0/0)
+[ATTEMPT] target 192.168.10.10 - login "root" - pass "dbpass321" - 1 of 1 [child 0] (0/0)
+[SUCCESS] target 192.168.10.10 - login "root" - pass "dbpass321" - 1 of 1 [child 0] (0/0)
+[INFO] 1 task, 1 server, 4 login tries (l:1/p:4), ~4 tries per task
+[STATUS] attack finished for 192.168.10.10 (waiting for children to finish)
+[INFO] 1 of 1 target successfully completed, 1 valid password found
+Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2023-02-20 14:30:46
+[2025-07-10 20:04:21.431052] Session 192.168.91.100_1752175288: Command: ompleted, 1 valid password found
+Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2023-02-20 14:30:46
+[2025-07-10 20:04:22.243666] Session 192.168.91.100_1752175288: Response: ```
+web-server:~#
+```
+[2025-07-10 20:06:38.924314] Session 192.168.91.100_1752175288: Command: for i in {1..100}; do ssh root@192.168.10.10 & done
+[2025-07-10 20:06:40.154671] Session 192.168.91.100_1752175288: Response: bash: command not found
+[2025-07-10 20:07:03.192199] Session 192.168.91.100_1752175288: Command: tail -f /var/log/auth.log
+[2025-07-10 20:07:04.858567] Session 192.168.91.100_1752175288: Response: Apr 12 14:30:01 web-server sshd[1234]: Accepted password for root from 127.0.0.1 port 4444 ssh2
+Apr 12 14:30:02 web-server sshd[1235]: Accepted password for admin from 192.168.1.100 port 5555 ssh2
+Apr 12 14:30:05 web-server sshd[1236]: Accepted publickey for dev1 from 10.0.0.1 port 6666 ssh2
+Apr 12 14:30:10 web-server sshd[1237]: Accepted password for guest from 172.16.31.10 port 7777 ssh2
+Apr 12 14:30:15 web-server sshd[1238]: Accepted publickey for backup_user from 192.168.0.100 port 8888 ssh2
+[2025-07-10 20:09:06.458850] Session 192.168.91.100_1752175288: Command: dmesg | tail
+[2025-07-10 20:09:10.407115] Session 192.168.91.100_1752175288: Response: [    0.000000] Linux version 5.4.0-122-generic (buildd@lcy01-amd64-021) (gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.1)) #122-Ubuntu SMP Thu Oct 13 14:23:33 UTC 2022 (Ubuntu 5.4.0-122.122-generic 5.4.122)
+[    0.000000] Command line: BOOT_IMAGE=/boot/vmlinuz-5.4.0-122-generic root=UUID=12345678-1234-1234-1234-1234567890ab ro quiet splash
+[    0.000000] KERNEL supported cpus:
+[    0.000000]   Intel GenuineIntel
+[    0.000000]   AMD AuthenticAMD
+[    0.000000]   Centaur CentaurHauls
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x001: 'x87 floating point registers'
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x002: 'SSE registers'
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x004: 'AVX registers'
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x008: 'AVX-512 opmask'
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x010: 'AVX-512 ZMM_Hi256'
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x020: 'AVX-512 ZMM_Hi512'
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x040: 'AVX-512 Hi256 Zero'
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x080: 'AVX-512 Hi512 Zero'
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x100: 'AVX-512 ZMM_Opmask'
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x200: 'AVX-512 ZMM_DAZ'
+[    0.000000] x86/fpu: Using 'eager' lazy FPU context switch
+[    0.000000] e820: BIOS-provided physical RAM map:
+[    0.000000] BIOS-e820: [mem 0x0000000000000000-0x000000000009ffff] usable
+[    0.000000] BIOS-e820: [mem 0x00000000000a0000-0x00000000000fffff] reserved
+[    0.000000] BIOS-e820: [mem 0x0000000000100000-0x00000000bfffffff] usable
+[    0.000000] BIOS-e820: [mem 0x00000000c0000000-0x00000000cfffffff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000f0000000-0x00000000ffffffff] reserved
+[2025-07-10 20:13:30.048168] Session 192.168.91.100_1752175288: Command: cd exit
+[2025-07-10 20:13:31.045480] Session 192.168.91.100_1752175288: Response: /root
+[2025-07-10 20:13:35.810258] Session 192.168.91.100_1752175288: Command: exit
+[2025-07-10 20:13:35.810796] Session 192.168.91.100_1752175288: Response: Reverted to admin
+[2025-07-10 20:13:57.929538] Session 192.168.91.100_1752175288: Command: cd ssh -p 22 dev1@u192.168wwwweb-server-01
+[2025-07-10 20:13:57.929631] Session 192.168.91.100_1752175288: Response: 
+[2025-07-10 20:14:10.825346] Session 192.168.91.100_1752175288: Command: cd   cd ..
+[2025-07-10 20:14:10.825428] Session 192.168.91.100_1752175288: Response: 
+[2025-07-10 20:14:16.514590] Session 192.168.91.100_1752175288: Command: exit
+[2025-07-10 20:14:16.514774] Session 192.168.91.100_1752175288: Response: Reverted to admin
+[2025-07-10 20:14:41.480808] Session 192.168.91.100_1752175288: Command: cd ssh @-p aguest@192.168.91.134
+[2025-07-10 20:14:41.480904] Session 192.168.91.100_1752175288: Response: 
+[2025-07-10 20:15:01.790667] Session 192.168.91.100_1752178501: Connection established from 192.168.91.100
+[2025-07-10 20:15:05.069238] Session 192.168.91.100_1752178501: Login: admin/1
+[2025-07-10 20:15:09.058250] Session 192.168.91.100_1752178501: Command: ssh -p guest@192.168.91.134
+[2025-07-10 20:15:10.880802] Session 192.168.91.100_1752178501: Switched to user: guest
+[2025-07-10 20:15:10.881097] Session 192.168.91.100_1752178501: Response: 
+[2025-07-10 20:15:30.610783] Session 192.168.91.100_1752178501: Command: masscan -p22 --rate=1000 gues[C[Ct@192.168.91.134
+[2025-07-10 20:15:31.514962] Session 192.168.91.100_1752178501: Response: OpenBSD SSH-2.0-OpenSSH_8.2p1 Ubuntu 4ubuntu0.2
+[2025-07-10 20:15:46.797126] Session 192.168.91.100_1752178501: Command: masscan -p22 --rate=1000 guest@192.168.91.134
+[2025-07-10 20:15:48.129801] Session 192.168.91.100_1752178501: Response: OpenBSD SSH-2.0-OpenSSH_8.2p1 Ubuntu 4ubuntu0.2
+Connection to 192.168.91.134 22 port [tcp/ssh] succeeded!
+[2025-07-10 20:16:36.613052] Session 192.168.91.100_1752178501: Command: guest@web-server-01:/home/guest$ masscan -p22 --rate=1000 guest@192.168.91.134
+OpenBSD SSH-2.0-OpenSSH_8.2p1 Ubuntu 4ubuntu0.2
+Connection to 192.168.91.134 22 port [tcp/ssh] succeeded!
+guest@web-server-01:/home/guest$
+[2025-07-10 20:16:42.993637] Session 192.168.91.100_1752178501: Response: $ ssh -v -X web-server
+OpenSSH_8.2p1 Ubuntu 4ubuntu0.2, OpenSSL 1.1.1f  31 Mar 2020
+debug1: Reading configuration data /etc/ssh/ssh_config
+debug1: /etc/ssh/ssh_config line 19: Applying options for *
+debug1: Connecting to web-server [127.0.1.1] port 22.
+debug1: Connection established.
+debug1: identity file /home/guest/.ssh/id_rsa type -1
+debug1: identity file /home/guest/.ssh/id_rsa-cert type -1
+debug1: identity file /home/guest/.ssh/id_dsa type -1
+debug1: identity file /home/guest/.ssh/id_dsa-cert type -1
+debug1: identity file /home/guest/.ssh/id_ecdsa type -1
+debug1: identity file /home/guest/.ssh/id_ecdsa-cert type -1
+debug1: identity file /home/guest/.ssh/id_ed25519 type -1
+debug1: identity file /home/guest/.ssh/id_ed25519-cert type -1
+debug1: identity file /home/guest/.ssh/id_xmss type -1
+debug1: identity file /home/guest/.ssh/id_xmss-cert type -1
+debug1: Local version string SSH-2.0-OpenSSH_8.2p1 Ubuntu 4ubuntu0.2
+debug1: Remote protocol version 2.0, remote software version OpenSSH_8.2p1 Ubuntu 4ubuntu0.2
+debug1: match: OpenSSH_8.2p1 Ubuntu 4ubuntu0.2 pat OpenSSH* compat 0x04000000
+debug1: Authenticating to web-server:22 as 'guest'
+debug1: SSH2_MSG_KEXINIT sent
+debug1: SSH2_MSG_KEXINIT received
+debug1: kex: algorithm: curve25519-sha256
+debug1: kex: host key algorithm: rsa-sha2-512
+debug1: kex: server->client cipher: chacha20-poly1305@openssh.com MAC: <implicit> compression: none
+debug1: kex: client->server cipher: chacha20-poly1305@openssh.com MAC: <implicit> compression: none
+debug1: expecting SSH2_MSG_KEX_ECDH_REPLY
+debug1: Server host key: ssh-rsa SHA256:...
+debug1: Host 'web-server' is known and matches the RSA host key.
+debug1: Found key in /home/guest/.ssh/known_hosts:1
+debug1: rekey out after 134217728 blocks
+debug1: SSH2_MSG_NEWKEYS sent
+debug1: expecting SSH2_MSG_NEWKEYS
+debug1: SSH2_MSG_NEWKEYS received
+debug1: rekey in after 134217728 blocks
+debug1: Will attempt key: /home/guest/.ssh/id_rsa
+debug1: Will attempt key: /home/guest/.ssh/id_dsa
+debug1: Will attempt key: /home/guest/.ssh/id_ecdsa
+debug1: Will attempt key: /home/guest/.ssh/id_ed25519
+debug1: Will attempt key: /home/guest/.ssh/id_xmss
+debug1: SSH2_MSG_SERVICE_ACCEPT received
+debug1: Authentications that can continue: publickey,password
+debug1: Next authentication method: publickey
+debug1: Trying private key: /home/guest/.ssh/id_rsa
+debug1: Trying private key: /home/guest/.ssh/id_dsa
+debug1: Trying private key: /home/guest/.ssh/id_ecdsa
+debug1: Trying private key: /home/guest/.ssh/id_ed25519
+debug1: Trying private key: /home/guest/.ssh/id_xmss
+debug1: Next authentication method: password
+guest@web-server's password:
+debug1: Authentication succeeded (password).
+Authenticated to web-server ([127.0.1.1]:22).
+debug1: channel 0: new [client-session]
+debug1: Requesting X11 forwarding with authentication spoofing.
+debug1: Requesting authentication agent forwarding.
+debug1: Entering interactive session.
+debug1: pledge: network
+debug1: client_input_global_request: rtype hostkeys-00@openssh.com want_reply 0
+debug1: client_input_global_request: rtype hostkeys-prove-00@openssh.com want_reply 0
+debug1: Sending environment.
+debug1: channel 0: setting env DISPLAY = "localhost:10.0"
+debug1: channel 0: setting env SSH_AUTH_SOCK = "/tmp/ssh-XXXXXXX/agent.1234"
+debug1: channel 0: setting env SSH_AGENT_PID = "1235"
+debug1: channel 0: setting env LANG = "en_US.UTF-8"
+debug1: channel 0: setting env LC_ALL = "en_US.UTF-8"
+debug1: Sending command: xclock
+debug1: client_input_channel_req: channel 0 rtype exit-status reply 0
+debug1: channel 0: free: client-session, nchannels 1
+Connection to web-server closed.
+[2025-07-10 20:16:42.994202] Session 192.168.91.100_1752178501: Command: 
+[2025-07-10 20:16:42.994561] Session 192.168.91.100_1752178501: Response: Reverted to admin
+[2025-07-10 20:17:02.731431] Session 192.168.91.100_1752178501: Command: masscan -p22 --rate=1000 guest@192.168.91.134
+[2025-07-10 20:17:11.913036] Session 192.168.91.100_1752178501: Response: OpenBSD sshd 8.9p1, OpenSSL 3.0.2 15 Mar 2022
+debug1: reading configuration data /etc/ssh/sshd_config
+debug1: /etc/ssh/sshd_config line 52: Applying options for *
+debug1: Bind to port 22 on ::.
+

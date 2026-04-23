@@ -1,0 +1,41 @@
+[
+  {
+    "id": "CVE-2025-32013",
+    "method": "HTTP",
+    "description": "LNbits is a Lightning wallet and accounts system. A Server-Side Request Forgery (SSRF) vulnerability has been discovered in LNbits' LNURL authentication handling functionality. When processing LNURL authentication requests, the application accepts a callback URL parameter and makes an HTTP request to that URL using the httpx library with redirect following enabled. The application doesn't properly validate the callback URL, allowing attackers to specify internal network addresses and access internal resources.",
+    "severity": "HIGH",
+    "cvss_score": 7.5,
+    "attack_vector": "NETWORK",
+    "privileges_required": "NONE",
+    "user_interaction": "NONE",
+    "confidentiality_impact": "HIGH",
+    "integrity_impact": "NONE",
+    "availability_impact": "NONE",
+    "vulnerable_cpe": [
+      "cpe:2.3:a:lnbits:lnbits:*:*:*:*:*:*:*:*"
+    ],
+    "exploit_refs": [
+      "https://github.com/lnbits/lnbits/security/advisories/GHSA-qp8j-p87f-c8cc",
+      "https://github.com/lnbits/lnbits/security/advisories/GHSA-qp8j-p87f-c8cc"
+    ]
+  },
+  {
+    "id": "CVE-2025-3248",
+    "method": "HTTP",
+    "description": "Langflow versions prior to 1.3.0 are susceptible to code injection in \nthe /api/v1/validate/code endpoint. A remote and unauthenticated attacker can send crafted HTTP requests to execute arbitrary\ncode.",
+    "severity": "CRITICAL",
+    "cvss_score": 9.8,
+    "attack_vector": "NETWORK",
+    "privileges_required": "NONE",
+    "user_interaction": "NONE",
+    "confidentiality_impact": "HIGH",
+    "integrity_impact": "HIGH",
+    "availability_impact": "HIGH",
+    "vulnerable_cpe": [
+      "cpe:2.3:a:langflow:langflow:*:*:*:*:*:*:*:*"
+    ],
+    "exploit_refs": [
+      "https://www.horizon3.ai/attack-research/disclosures/unsafe-at-any-speed-abusing-python-exec-for-unauth-rce-in-langflow-ai/"
+    ]
+  }
+]

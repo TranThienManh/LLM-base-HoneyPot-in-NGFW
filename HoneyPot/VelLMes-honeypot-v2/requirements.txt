@@ -1,0 +1,13 @@
+pyyaml==6.0.1 
+requests==2.31.0 
+paramiko>=3.4.0 
+cryptography>=43.0.1 
+tiktoken==0.7.0 
+python-dotenv==1.0.1 
+fuzzywuzzy==0.18.0 
+python-Levenshtein==0.25.1 
+watchdog==4.0.1 
+tenacity==8.2.3
+google-generativeai
+ruamel.yaml
+urllib3

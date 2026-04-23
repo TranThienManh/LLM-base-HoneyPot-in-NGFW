@@ -1,0 +1,263 @@
+2025-07-17 18:28:48,818 - INFO - HTTP connection from 192.168.91.100:56498
+2025-07-17 18:28:48,957 - INFO - HTTP request from 192.168.91.100: GET /api/v1/lnurlauth
+2025-07-17 18:28:49,170 - INFO - API request on /api/v1/lnurlauth from 192.168.91.100
+2025-07-17 18:28:54,998 - INFO - HTTP connection from 192.168.91.100:41562
+2025-07-17 18:28:54,999 - INFO - HTTP request from 192.168.91.100: DELETE /api/v1/lnurlauth
+2025-07-17 18:30:01,269 - INFO - HTTP connection from 192.168.91.100:50156
+2025-07-17 18:30:01,271 - INFO - HTTP request from 192.168.91.100: POST /api/lnurl/verify
+2025-07-17 18:30:01,372 - INFO - API request on /api/lnurl/verify from 192.168.91.100
+2025-07-17 18:30:11,861 - INFO - HTTP connection from 192.168.91.100:59530
+2025-07-17 18:30:11,862 - INFO - HTTP request from 192.168.91.100: PUT /api/auth/cb
+2025-07-17 18:30:20,940 - INFO - HTTP connection from 192.168.91.100:56582
+2025-07-17 18:30:20,942 - INFO - HTTP request from 192.168.91.100: POST /internal/auth
+2025-07-17 18:30:33,719 - INFO - HTTP connection from 192.168.91.100:52228
+2025-07-17 18:30:33,723 - INFO - HTTP request from 192.168.91.100: POST /api/v2/auth/callback
+2025-07-17 18:30:33,824 - INFO - API request on /api/v2/auth/callback from 192.168.91.100
+2025-07-17 18:49:16,296 - INFO - HTTP connection from 192.168.91.100:34576
+2025-07-17 18:49:16,403 - INFO - HTTP request from 192.168.91.100: DELETE /api/v2/auth/callback
+2025-07-17 18:49:28,240 - INFO - HTTP connection from 192.168.91.100:53060
+2025-07-17 18:49:28,244 - INFO - HTTP request from 192.168.91.100: GET /internal/auth
+2025-07-17 18:49:54,312 - INFO - HTTP connection from 192.168.91.100:57008
+2025-07-17 18:49:54,313 - INFO - HTTP request from 192.168.91.100: POST /api/v2/auth/callback
+2025-07-17 18:49:54,416 - INFO - API request on /api/v2/auth/callback from 192.168.91.100
+2025-07-17 18:50:22,141 - INFO - HTTP connection from 192.168.91.100:33400
+2025-07-17 18:50:22,144 - INFO - HTTP request from 192.168.91.100: PUT /api/lnurl/verify
+2025-07-17 19:06:26,980 - INFO - HTTP connection from 192.168.91.100:39504
+2025-07-17 19:06:26,988 - INFO - HTTP request from 192.168.91.100: POST /api/lnurl/verify
+2025-07-17 19:06:27,097 - INFO - API request on /api/lnurl/verify from 192.168.91.100
+2025-07-17 19:06:41,626 - INFO - HTTP connection from 192.168.91.100:49658
+2025-07-17 19:06:41,627 - INFO - HTTP request from 192.168.91.100: PUT /internal/auth
+2025-07-17 19:06:51,491 - INFO - HTTP connection from 192.168.91.100:56656
+2025-07-17 19:06:51,495 - INFO - HTTP request from 192.168.91.100: GET /internal/auth
+2025-07-17 19:07:04,046 - INFO - HTTP connection from 192.168.91.100:41030
+2025-07-17 19:07:04,047 - INFO - HTTP request from 192.168.91.100: DELETE /api/lnurl/verify
+2025-07-17 19:07:21,931 - INFO - HTTP connection from 192.168.91.100:41464
+2025-07-17 19:07:21,932 - INFO - HTTP request from 192.168.91.100: GET /internal/auth
+2025-07-17 19:20:26,966 - INFO - HTTP connection from 192.168.91.100:32864
+2025-07-17 19:20:26,986 - INFO - HTTP request from 192.168.91.100: PUT /api/v1/lnurlauth
+2025-07-17 19:20:39,608 - INFO - HTTP connection from 192.168.91.100:51088
+2025-07-17 19:20:39,609 - INFO - HTTP request from 192.168.91.100: POST /api/v2/auth/callback
+2025-07-17 19:20:39,711 - INFO - API request on /api/v2/auth/callback from 192.168.91.100
+2025-07-17 19:20:46,593 - INFO - HTTP connection from 192.168.91.100:51096
+2025-07-17 19:20:46,596 - INFO - HTTP request from 192.168.91.100: GET /api/v1/lnurlauth
+2025-07-17 19:20:46,698 - INFO - API request on /api/v1/lnurlauth from 192.168.91.100
+2025-07-17 19:20:56,426 - INFO - HTTP connection from 192.168.91.100:52264
+2025-07-17 19:20:56,427 - INFO - HTTP request from 192.168.91.100: GET /internal/auth
+2025-07-17 19:21:06,541 - INFO - HTTP connection from 192.168.91.100:35722
+2025-07-17 19:21:06,542 - INFO - HTTP request from 192.168.91.100: DELETE /api/auth/cb
+2025-07-17 19:31:02,344 - INFO - HTTP connection from 192.168.91.100:37586
+2025-07-17 19:31:02,346 - INFO - HTTP request from 192.168.91.100: PUT /internal/auth
+2025-07-17 19:31:12,636 - INFO - HTTP connection from 192.168.91.100:48446
+2025-07-17 19:31:12,637 - INFO - HTTP request from 192.168.91.100: DELETE /api/lnurl/verify
+2025-07-17 19:31:21,712 - INFO - HTTP connection from 192.168.91.100:52016
+2025-07-17 19:31:21,713 - INFO - HTTP request from 192.168.91.100: DELETE /api/auth/cb
+2025-07-17 19:31:38,316 - INFO - HTTP connection from 192.168.91.100:60408
+2025-07-17 19:31:38,317 - INFO - HTTP request from 192.168.91.100: DELETE /api/v1/lnurlauth
+2025-07-17 19:31:48,334 - INFO - HTTP connection from 192.168.91.100:39458
+2025-07-17 19:31:48,334 - INFO - HTTP request from 192.168.91.100: GET /api/lnurl/verify
+2025-07-17 19:31:48,436 - INFO - API request on /api/lnurl/verify from 192.168.91.100
+2025-07-18 07:36:12,750 - INFO - HTTP Honeypot listening on 0.0.0.0:80
+2025-07-18 07:36:22,094 - INFO - HTTP connection from 192.168.91.100:40022
+2025-07-18 07:36:22,096 - INFO - HTTP request from 192.168.91.100: POST /api/auth/cb
+2025-07-18 07:36:22,199 - INFO - API request on /api/auth/cb from 192.168.91.100
+2025-07-18 07:36:34,220 - INFO - HTTP connection from 192.168.91.100:37222
+2025-07-18 07:36:34,220 - INFO - HTTP request from 192.168.91.100: GET /api/v2/auth/callback
+2025-07-18 07:36:34,321 - INFO - API request on /api/v2/auth/callback from 192.168.91.100
+2025-07-18 07:36:48,031 - INFO - HTTP connection from 192.168.91.100:50196
+2025-07-18 07:36:48,032 - INFO - HTTP request from 192.168.91.100: PUT /internal/auth
+2025-07-18 07:36:59,908 - INFO - HTTP connection from 192.168.91.100:37988
+2025-07-18 07:36:59,908 - INFO - HTTP request from 192.168.91.100: PUT /api/lnurl/verify
+2025-07-18 07:37:15,803 - INFO - HTTP connection from 192.168.91.100:37706
+2025-07-18 07:37:15,805 - INFO - HTTP request from 192.168.91.100: GET /internal/auth
+2025-07-18 07:38:19,335 - INFO - HTTP connection from 192.168.91.100:52238
+2025-07-18 07:38:19,339 - INFO - HTTP request from 192.168.91.100: POST /api/auth/cb
+2025-07-18 07:38:19,440 - INFO - API request on /api/auth/cb from 192.168.91.100
+2025-07-18 07:38:38,087 - INFO - HTTP connection from 192.168.91.100:39414
+2025-07-18 07:38:38,089 - INFO - HTTP request from 192.168.91.100: GET /api/v2/auth/callback
+2025-07-18 07:38:38,190 - INFO - API request on /api/v2/auth/callback from 192.168.91.100
+2025-07-18 07:50:08,446 - INFO - HTTP connection from 192.168.91.100:57592
+2025-07-18 07:50:08,451 - INFO - HTTP request from 192.168.91.100: DELETE /api/v1/lnurlauth
+2025-07-18 07:50:18,338 - INFO - HTTP connection from 192.168.91.100:33674
+2025-07-18 07:50:18,340 - INFO - HTTP request from 192.168.91.100: DELETE /api/v1/lnurlauth
+2025-07-18 07:50:27,956 - INFO - HTTP connection from 192.168.91.100:38872
+2025-07-18 07:50:27,956 - INFO - HTTP request from 192.168.91.100: GET /api/auth/cb
+2025-07-18 07:50:28,060 - INFO - API request on /api/auth/cb from 192.168.91.100
+2025-07-18 07:50:50,009 - INFO - HTTP connection from 192.168.91.100:34714
+2025-07-18 07:50:50,010 - INFO - HTTP request from 192.168.91.100: PUT /api/lnurl/verify
+2025-07-18 07:50:57,599 - INFO - HTTP connection from 192.168.91.100:54754
+2025-07-18 07:50:57,600 - INFO - HTTP request from 192.168.91.100: POST /api/v2/auth/callback
+2025-07-18 07:50:57,701 - INFO - API request on /api/v2/auth/callback from 192.168.91.100
+2025-07-18 07:59:47,991 - INFO - HTTP connection from 192.168.91.100:59080
+2025-07-18 07:59:47,992 - INFO - HTTP request from 192.168.91.100: POST /api/lnurl/verify
+2025-07-18 07:59:48,093 - INFO - API request on /api/lnurl/verify from 192.168.91.100
+2025-07-18 08:00:00,120 - INFO - HTTP connection from 192.168.91.100:55574
+2025-07-18 08:00:00,120 - INFO - HTTP request from 192.168.91.100: DELETE /api/v2/auth/callback
+2025-07-18 08:00:11,049 - INFO - HTTP connection from 192.168.91.100:40358
+2025-07-18 08:00:11,050 - INFO - HTTP request from 192.168.91.100: POST /api/v1/lnurlauth
+2025-07-18 08:00:11,151 - INFO - API request on /api/v1/lnurlauth from 192.168.91.100
+2025-07-18 08:00:22,866 - INFO - HTTP connection from 192.168.91.100:48506
+2025-07-18 08:00:22,868 - INFO - HTTP request from 192.168.91.100: DELETE /internal/auth
+2025-07-18 08:00:33,842 - INFO - HTTP connection from 192.168.91.100:54842
+2025-07-18 08:00:33,842 - INFO - HTTP request from 192.168.91.100: POST /api/v1/lnurlauth
+2025-07-18 08:00:33,943 - INFO - API request on /api/v1/lnurlauth from 192.168.91.100
+2025-07-18 08:07:44,986 - INFO - HTTP connection from 192.168.91.100:44838
+2025-07-18 08:07:44,987 - INFO - HTTP request from 192.168.91.100: PUT /api/v2/auth/callback
+2025-07-18 08:07:53,702 - INFO - HTTP connection from 192.168.91.100:44854
+2025-07-18 08:07:53,702 - INFO - HTTP request from 192.168.91.100: POST /internal/auth
+2025-07-18 08:08:06,179 - INFO - HTTP connection from 192.168.91.100:49498
+2025-07-18 08:08:06,180 - INFO - HTTP request from 192.168.91.100: POST /api/auth/cb
+2025-07-18 08:08:06,281 - INFO - API request on /api/auth/cb from 192.168.91.100
+2025-07-18 08:09:07,594 - INFO - HTTP connection from 192.168.91.100:54432
+2025-07-18 08:09:07,595 - INFO - HTTP request from 192.168.91.100: POST /api/auth/cb
+2025-07-18 08:09:07,695 - INFO - API request on /api/auth/cb from 192.168.91.100
+2025-07-18 08:09:33,385 - INFO - HTTP connection from 192.168.91.100:58078
+2025-07-18 08:09:33,387 - INFO - HTTP request from 192.168.91.100: GET /api/lnurl/verify
+2025-07-18 08:09:33,487 - INFO - API request on /api/lnurl/verify from 192.168.91.100
+2025-07-18 08:14:03,301 - INFO - HTTP connection from 192.168.91.100:41752
+2025-07-18 08:14:03,302 - INFO - HTTP request from 192.168.91.100: POST /api/auth/cb
+2025-07-18 08:14:03,402 - INFO - API request on /api/auth/cb from 192.168.91.100
+2025-07-18 08:14:21,331 - INFO - HTTP connection from 192.168.91.100:51112
+2025-07-18 08:14:21,332 - INFO - HTTP request from 192.168.91.100: GET /api/lnurl/verify
+2025-07-18 08:14:21,432 - INFO - API request on /api/lnurl/verify from 192.168.91.100
+2025-07-18 08:14:32,920 - INFO - HTTP connection from 192.168.91.100:59388
+2025-07-18 08:14:32,920 - INFO - HTTP request from 192.168.91.100: GET /api/lnurl/verify
+2025-07-18 08:14:33,021 - INFO - API request on /api/lnurl/verify from 192.168.91.100
+2025-07-18 08:18:42,148 - INFO - HTTP connection from 192.168.91.100:34664
+2025-07-18 08:18:42,151 - INFO - HTTP request from 192.168.91.100: PUT /api/v1/lnurlauth
+2025-07-18 08:18:55,443 - INFO - HTTP connection from 192.168.91.100:58762
+2025-07-18 08:18:55,444 - INFO - HTTP request from 192.168.91.100: POST /api/v1/lnurlauth
+2025-07-18 08:18:55,545 - INFO - API request on /api/v1/lnurlauth from 192.168.91.100
+2025-07-18 08:19:06,383 - INFO - HTTP connection from 192.168.91.100:33370
+2025-07-18 08:19:06,383 - INFO - HTTP request from 192.168.91.100: PUT /api/lnurl/verify
+2025-07-18 08:19:17,594 - INFO - HTTP connection from 192.168.91.100:37926
+2025-07-18 08:19:17,595 - INFO - HTTP request from 192.168.91.100: POST /api/v2/auth/callback
+2025-07-18 08:19:17,696 - INFO - API request on /api/v2/auth/callback from 192.168.91.100
+2025-07-18 08:19:28,151 - INFO - HTTP connection from 192.168.91.100:58284
+2025-07-18 08:19:28,153 - INFO - HTTP request from 192.168.91.100: DELETE /api/v2/auth/callback
+2025-07-18 08:28:22,977 - INFO - HTTP connection from 192.168.91.100:60564
+2025-07-18 08:28:22,978 - INFO - HTTP request from 192.168.91.100: POST /api/v2/auth/callback
+2025-07-18 08:28:23,078 - INFO - API request on /api/v2/auth/callback from 192.168.91.100
+2025-07-18 08:28:31,847 - INFO - HTTP connection from 192.168.91.100:37258
+2025-07-18 08:28:31,847 - INFO - HTTP request from 192.168.91.100: PUT /api/v2/auth/callback
+2025-07-18 08:28:40,117 - INFO - HTTP connection from 192.168.91.100:59660
+2025-07-18 08:28:40,118 - INFO - HTTP request from 192.168.91.100: GET /api/v1/lnurlauth
+2025-07-18 08:28:40,219 - INFO - API request on /api/v1/lnurlauth from 192.168.91.100
+2025-07-18 08:28:54,132 - INFO - HTTP connection from 192.168.91.100:41848
+2025-07-18 08:28:54,132 - INFO - HTTP request from 192.168.91.100: GET /api/auth/cb
+2025-07-18 08:28:54,235 - INFO - API request on /api/auth/cb from 192.168.91.100
+2025-07-18 08:29:03,911 - INFO - HTTP connection from 192.168.91.100:37536
+2025-07-18 08:29:03,911 - INFO - HTTP request from 192.168.91.100: DELETE /api/v1/lnurlauth
+2025-07-18 08:37:58,052 - INFO - HTTP connection from 192.168.91.100:34922
+2025-07-18 08:37:58,052 - INFO - HTTP request from 192.168.91.100: DELETE /api/lnurl/verify
+2025-07-18 08:38:10,453 - INFO - HTTP connection from 192.168.91.100:51704
+2025-07-18 08:38:10,453 - INFO - HTTP request from 192.168.91.100: GET /api/v1/lnurlauth
+2025-07-18 08:38:10,554 - INFO - API request on /api/v1/lnurlauth from 192.168.91.100
+2025-07-18 08:38:20,082 - INFO - HTTP connection from 192.168.91.100:56464
+2025-07-18 08:38:20,083 - INFO - HTTP request from 192.168.91.100: PUT /api/auth/cb
+2025-07-18 08:38:29,136 - INFO - HTTP connection from 192.168.91.100:59336
+2025-07-18 08:38:29,137 - INFO - HTTP request from 192.168.91.100: DELETE /api/auth/cb
+2025-07-18 08:38:38,818 - INFO - HTTP connection from 192.168.91.100:54658
+2025-07-18 08:38:38,818 - INFO - HTTP request from 192.168.91.100: GET /api/v1/lnurlauth
+2025-07-18 08:38:38,919 - INFO - API request on /api/v1/lnurlauth from 192.168.91.100
+2025-07-18 08:44:02,935 - INFO - HTTP connection from 192.168.91.100:40706
+2025-07-18 08:44:02,937 - INFO - HTTP request from 192.168.91.100: DELETE /api/lnurl/verify
+2025-07-18 08:44:15,504 - INFO - HTTP connection from 192.168.91.100:44422
+2025-07-18 08:44:15,505 - INFO - HTTP request from 192.168.91.100: GET /api/v2/auth/callback
+2025-07-18 08:44:15,606 - INFO - API request on /api/v2/auth/callback from 192.168.91.100
+2025-07-18 08:44:26,065 - INFO - HTTP connection from 192.168.91.100:46518
+2025-07-18 08:44:26,065 - INFO - HTTP request from 192.168.91.100: POST /api/auth/cb
+2025-07-18 08:44:26,166 - INFO - API request on /api/auth/cb from 192.168.91.100
+2025-07-18 08:44:35,730 - INFO - HTTP connection from 192.168.91.100:41922
+2025-07-18 08:44:35,731 - INFO - HTTP request from 192.168.91.100: POST /api/auth/cb
+2025-07-18 08:44:35,832 - INFO - API request on /api/auth/cb from 192.168.91.100
+2025-07-18 08:44:49,784 - INFO - HTTP connection from 192.168.91.100:50876
+2025-07-18 08:44:49,784 - INFO - HTTP request from 192.168.91.100: POST /internal/auth
+2025-07-18 08:55:37,472 - INFO - HTTP connection from 192.168.91.100:36642
+2025-07-18 08:55:37,474 - INFO - HTTP request from 192.168.91.100: DELETE /api/auth/cb
+2025-07-18 08:55:44,139 - INFO - HTTP connection from 192.168.91.100:36652
+2025-07-18 08:55:44,140 - INFO - HTTP request from 192.168.91.100: GET /api/v2/auth/callback
+2025-07-18 08:55:44,241 - INFO - API request on /api/v2/auth/callback from 192.168.91.100
+2025-07-18 08:55:50,711 - INFO - HTTP connection from 192.168.91.100:46582
+2025-07-18 08:55:50,711 - INFO - HTTP request from 192.168.91.100: DELETE /internal/auth
+2025-07-18 08:56:02,128 - INFO - HTTP connection from 192.168.91.100:59280
+2025-07-18 08:56:02,128 - INFO - HTTP request from 192.168.91.100: PUT /api/lnurl/verify
+2025-07-18 08:56:11,649 - INFO - HTTP connection from 192.168.91.100:50382
+2025-07-18 08:56:11,650 - INFO - HTTP request from 192.168.91.100: DELETE /api/v1/lnurlauth
+2025-07-18 09:03:06,043 - INFO - HTTP connection from 192.168.91.100:54392
+2025-07-18 09:03:06,044 - INFO - HTTP request from 192.168.91.100: GET /internal/auth
+2025-07-18 09:03:17,762 - INFO - HTTP connection from 192.168.91.100:56312
+2025-07-18 09:03:17,762 - INFO - HTTP request from 192.168.91.100: GET /api/v1/lnurlauth
+2025-07-18 09:03:17,863 - INFO - API request on /api/v1/lnurlauth from 192.168.91.100
+2025-07-18 09:03:24,987 - INFO - HTTP connection from 192.168.91.100:44222
+2025-07-18 09:03:24,987 - INFO - HTTP request from 192.168.91.100: PUT /api/v2/auth/callback
+2025-07-18 09:03:37,557 - INFO - HTTP connection from 192.168.91.100:48508
+2025-07-18 09:03:37,559 - INFO - HTTP request from 192.168.91.100: POST /api/lnurl/verify
+2025-07-18 09:03:37,659 - INFO - API request on /api/lnurl/verify from 192.168.91.100
+2025-07-18 09:03:52,365 - INFO - HTTP connection from 192.168.91.100:47652
+2025-07-18 09:03:52,365 - INFO - HTTP request from 192.168.91.100: PUT /api/lnurl/verify
+2025-07-18 09:14:18,675 - INFO - HTTP connection from 192.168.91.100:38640
+2025-07-18 09:14:18,676 - INFO - HTTP request from 192.168.91.100: DELETE /internal/auth
+2025-07-18 09:14:27,103 - INFO - HTTP connection from 192.168.91.100:48468
+2025-07-18 09:14:27,105 - INFO - HTTP request from 192.168.91.100: PUT /api/v2/auth/callback
+2025-07-18 09:14:37,339 - INFO - HTTP connection from 192.168.91.100:45758
+2025-07-18 09:14:37,340 - INFO - HTTP request from 192.168.91.100: POST /internal/auth
+2025-07-18 09:14:50,740 - INFO - HTTP connection from 192.168.91.100:39404
+2025-07-18 09:14:50,741 - INFO - HTTP request from 192.168.91.100: POST /internal/auth
+2025-07-18 09:15:08,688 - INFO - HTTP connection from 192.168.91.100:41082
+2025-07-18 09:15:08,689 - INFO - HTTP request from 192.168.91.100: GET /internal/auth
+2025-07-18 09:23:49,991 - INFO - HTTP connection from 192.168.91.100:50746
+2025-07-18 09:23:49,993 - INFO - HTTP request from 192.168.91.100: POST /api/lnurl/verify
+2025-07-18 09:23:50,094 - INFO - API request on /api/lnurl/verify from 192.168.91.100
+2025-07-18 09:24:02,530 - INFO - HTTP connection from 192.168.91.100:35868
+2025-07-18 09:24:02,531 - INFO - HTTP request from 192.168.91.100: GET /api/auth/cb
+2025-07-18 09:24:02,631 - INFO - API request on /api/auth/cb from 192.168.91.100
+2025-07-18 09:24:12,905 - INFO - HTTP connection from 192.168.91.100:54132
+2025-07-18 09:24:12,906 - INFO - HTTP request from 192.168.91.100: POST /api/auth/cb
+2025-07-18 09:24:13,007 - INFO - API request on /api/auth/cb from 192.168.91.100
+2025-07-18 09:24:24,596 - INFO - HTTP connection from 192.168.91.100:45742
+2025-07-18 09:24:24,597 - INFO - HTTP request from 192.168.91.100: GET /api/v1/lnurlauth
+2025-07-18 09:24:24,698 - INFO - API request on /api/v1/lnurlauth from 192.168.91.100
+2025-07-18 09:24:32,893 - INFO - HTTP connection from 192.168.91.100:45746
+2025-07-18 09:24:32,894 - INFO - HTTP request from 192.168.91.100: GET /api/v2/auth/callback
+2025-07-18 09:24:32,995 - INFO - API request on /api/v2/auth/callback from 192.168.91.100
+2025-07-18 13:36:46,433 - INFO - HTTP Honeypot listening on 0.0.0.0:80
+2025-07-18 13:37:35,614 - INFO - HTTP connection from 192.168.91.100:42116
+2025-07-18 13:37:35,620 - INFO - HTTP request from 192.168.91.100: PUT /api/v2/auth/callback
+2025-07-18 13:37:44,366 - INFO - HTTP connection from 192.168.91.100:32800
+2025-07-18 13:37:44,369 - INFO - HTTP request from 192.168.91.100: POST /internal/auth
+2025-07-18 13:38:01,383 - INFO - HTTP connection from 192.168.91.100:39482
+2025-07-18 13:38:01,385 - INFO - HTTP request from 192.168.91.100: GET /internal/auth
+2025-07-18 13:38:13,837 - INFO - HTTP connection from 192.168.91.100:44290
+2025-07-18 13:38:13,838 - INFO - HTTP request from 192.168.91.100: POST /api/v2/auth/callback
+2025-07-18 13:38:13,940 - INFO - API request on /api/v2/auth/callback from 192.168.91.100
+2025-07-18 13:38:19,393 - INFO - HTTP connection from 192.168.91.100:44300
+2025-07-18 13:38:19,395 - INFO - HTTP request from 192.168.91.100: POST /api/v2/auth/callback
+2025-07-18 13:38:19,498 - INFO - API request on /api/v2/auth/callback from 192.168.91.100
+2025-07-18 13:38:30,272 - INFO - HTTP connection from 192.168.91.100:33368
+2025-07-18 13:38:30,272 - INFO - HTTP request from 192.168.91.100: DELETE /api/v1/lnurlauth
+2025-07-18 13:48:48,199 - INFO - HTTP connection from 192.168.91.100:38326
+2025-07-18 13:48:48,207 - INFO - HTTP request from 192.168.91.100: DELETE /internal/auth
+2025-07-18 13:48:56,164 - INFO - HTTP connection from 192.168.91.100:33274
+2025-07-18 13:48:56,166 - INFO - HTTP request from 192.168.91.100: GET /api/v1/lnurlauth
+2025-07-18 13:48:56,273 - INFO - API request on /api/v1/lnurlauth from 192.168.91.100
+2025-07-18 13:49:06,140 - INFO - HTTP connection from 192.168.91.100:58622
+2025-07-18 13:49:06,142 - INFO - HTTP request from 192.168.91.100: DELETE /internal/auth
+2025-07-18 13:49:22,190 - INFO - HTTP connection from 192.168.91.100:54762
+2025-07-18 13:49:22,191 - INFO - HTTP request from 192.168.91.100: POST /internal/auth
+2025-07-18 13:49:39,877 - INFO - HTTP connection from 192.168.91.100:54956
+2025-07-18 13:49:39,883 - INFO - HTTP request from 192.168.91.100: POST /api/v1/lnurlauth
+2025-07-18 13:49:39,986 - INFO - API request on /api/v1/lnurlauth from 192.168.91.100
+2025-07-18 13:49:46,607 - INFO - HTTP connection from 192.168.91.100:60090
+2025-07-18 13:49:46,608 - INFO - HTTP request from 192.168.91.100: POST /api/v1/lnurlauth
+2025-07-18 13:49:46,715 - INFO - API request on /api/v1/lnurlauth from 192.168.91.100
+2025-07-18 13:56:00,016 - INFO - HTTP connection from 192.168.91.100:50482
+2025-07-18 13:56:00,021 - INFO - HTTP request from 192.168.91.100: POST /internal/auth
+2025-07-18 13:56:11,034 - INFO - HTTP connection from 192.168.91.100:34810
+2025-07-18 13:56:11,035 - INFO - HTTP request from 192.168.91.100: DELETE /api/v2/auth/callback
+2025-07-18 13:56:21,258 - INFO - HTTP connection from 192.168.91.100:34820
+2025-07-18 13:56:21,259 - INFO - HTTP request from 192.168.91.100: PUT /internal/auth
+2025-07-18 13:56:30,243 - INFO - HTTP connection from 192.168.91.100:45234
+2025-07-18 13:56:30,244 - INFO - HTTP request from 192.168.91.100: PUT /internal/auth
+2025-07-18 13:56:47,651 - INFO - HTTP connection from 192.168.91.100:40338
+2025-07-18 13:56:47,654 - INFO - HTTP request from 192.168.91.100: DELETE /api/v2/auth/callback
+2025-07-20 14:14:07,536 - INFO - HTTP Honeypot listening on 0.0.0.0:80
